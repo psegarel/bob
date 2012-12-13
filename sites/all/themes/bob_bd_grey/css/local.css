@@ -1,0 +1,60 @@
+section#header-section												{	/* padding: 40px 0 0 0; */
+																	}
+
+section#footer-section												{	background: #121212;
+																	}
+
+section#about,
+section#gallery,
+section#content-section												{	/* padding: 20px 0; */
+																	}
+																	
+
+#copyright															{	font-family: 'Century Gothic', sans-serif;
+																		text-transform: uppercase;
+																		font-size: 10px;
+																		padding-top: 20px;
+																	}
+
+#drupal-header														{	padding: 40px 0;
+																	}
+
+#footerArea3 ul,
+#footerArea4 ul														{	list-style: none;
+																		margin: 0;
+																		padding: 0;
+																	}
+
+.thumbnails li.span4 												{	background-color: white;
+																		height: 340px;
+																	}
+
+.thumbnails li h4 a 												{	line-height: inherit;
+																		margin: 0;
+																		text-decoration: inherit;
+																		color: inherit;
+																		font-size: inherit;
+																		font-family: inherit;
+																		font-weight: inherit;
+																		font-style: inherit;
+																		
+																	}
+
+.thumbnails iframe,
+.thumbnails h4,
+.thumbnails img,
+.thumbnails p		 												{	padding-left: 10px;
+																	}
+
+.more																{	font-family: 'Century Gothic' , sans-serif;
+																		font-size: 11px;
+																		text-transform: uppercase;
+																	}
+
+.italic																{	font-style: italic;
+																	}
+																	
+.tile																{	background: white;
+																		padding: 10px;
+																	}
+

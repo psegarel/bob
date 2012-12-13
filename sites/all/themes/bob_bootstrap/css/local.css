@@ -1,0 +1,42 @@
+body 																{	padding-top: 0;
+																	}
+
+section#header														{	background: #eee;
+																		padding: 20px 0;
+																	}
+
+#site-name-slogan h1 a,
+h1																	{	font-size: 54px;
+																		color: #444;
+																		text-decoration: none;
+																	}
+																	
+h1 , h2 , h3														{	font-family: 'Comfortaa', sans-serif;
+																	}
+																	
+ul .nav li															{	font-family: 'Abel', 'Arial Narrow' , 'sans-serif'; 
+																	}																	
+
+
+/* CSS overriden values , do not erase!	 */	
+.page-header 														{	border-bottom: none;
+																	}															
+																	
+.footer 															{	border-top: none;
+																	}
+
+body {
+font-family: 'Abel', "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 20px;
+color: #333;
+}																		
+
+.navbar .nav > li > a {
+font-size: 18px;
+float: none;
+padding: 10px 20px;
+color: #777;
+text-decoration: none;
+text-shadow: 0 0 0 white;
+}
