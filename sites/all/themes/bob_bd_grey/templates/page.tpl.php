@@ -68,22 +68,6 @@
 					<?php print custompage_view_tile( 'footer', $title=FALSE, $display_id = 'footer_block_1' , 26); ?>
 				</div><!-- end footer area 1 -->
 				<div class="span3" id="footerArea2"><!-- start footer area 2 -->
-					<h3>Recent News</h3> 
-					<p>
-					<a href="#" title="">Lorem Ipsum is simply dummy text</a><br />
-					<span style="text-transform:none;">2 hours ago</span>
-					</p>
-					<p>
-					<a href="#" title="">Duis mollis, est non commodo luctus</a><br />
-					<span style="text-transform:none;">5 hours ago</span>
-					</p>
-					<p>
-					<a href="#" title="">Maecenas sed diam eget risus varius</a><br />
-					<span style="text-transform:none;">19 hours ago</span>
-					</p>
-					<p>
-					<a href="#" title="">VIEW ALL POSTS</a>
-					</p>
 				</div><!-- end footer area 2 -->
 				<div class="span3" id="footerArea3"><!-- start footer area 3 -->
 					<h3>Social Networks</h3>      					

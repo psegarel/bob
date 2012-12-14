@@ -72,7 +72,9 @@
 				<div id="headerSeparator2"></div>
 			</div><!-- end span12 -->
 		</div><!-- end row fluid -->
-		
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
 		<div class="row-fluid"><!-- start row fluid -->
 			<div class="span12"><!-- start span 12 -->
 				<div class="span3">
@@ -134,6 +136,8 @@
 					<?php print custompage_view_tile( 'footer', $title=FALSE, $display_id = 'footer_block_1' , 26); ?>
 				</div><!-- end footer area 1 -->
 				<div class="span3" id="footerArea2"><!-- start footer area 2 -->
+				&nbsp;
+<!--
 					<h3>Recent News</h3> 
 					<p>
 					<a href="#" title="">Lorem Ipsum is simply dummy text</a><br />
@@ -150,6 +154,7 @@
 					<p>
 					<a href="#" title="">VIEW ALL POSTS</a>
 					</p>
+-->
 				</div><!-- end footer area 2 -->
 				<div class="span3" id="footerArea3"><!-- start footer area 3 -->
 					<h3>Social Networks</h3>      					
