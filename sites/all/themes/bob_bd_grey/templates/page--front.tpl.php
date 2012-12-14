@@ -21,9 +21,9 @@
 				<p>&nbsp;</p>
 				<div class="span6"><!-- start span 6 -->
 					<!-- Start Menu Right -->						
-					<div id="divMenuRight" class="pull-right">
+					<div id="divMenuRight">
 						<!-- Start Nav Bar -->	
-						<div class="navbar">
+						<div class="navbar pull-right">
 							<button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
 								NAVIGATION <span class="icon-chevron-down icon-white"></span>
 							</button>
@@ -40,10 +40,11 @@
 	</div><!-- end divBoxed -->	
 </section>
 
-<section id="content-section">
+<section id="content-section" class="clearfix">
 <!-- start Content Area -->
 <div class="contentArea container">
-	<div class="divPanel notop page-content"><!-- start div Panel -->		
+	<div class="divPanel notop page-content"><!-- start div Panel -->	
+		
 		<!-- start row fluid -->
 		<div class="row-fluid">
 			<div class="span12"><!-- start span12 -->
@@ -55,6 +56,8 @@
 								<?php print custompage_view_tile( 'references', $title=FALSE, $display_id = 'front_reference'); ?>
 								<p>&nbsp;</p>							
 							</div>
+							
+							<!-- Buy Badges -->
 							<div class="row-fluid">
 								<div class="span3">
 									<?php print custompage_view_tile( 'links', $title=FALSE, $display_id = 'badge' , 23); ?>
@@ -63,8 +66,10 @@
 									<?php print custompage_view_tile( 'links', $title=FALSE, $display_id = 'badge' , 41); ?>
 								</div>
 							</div>
+							
 						</div>							
 					</div><!-- end span 6 -->
+				
 					<div class="span6"><!-- start carousel -->
 						<?php print custompage_view_tile( 'slideshow', $title=FALSE, $display_id = 'front_carousel'); ?>									
 					</div><!-- end carousel -->
@@ -72,9 +77,12 @@
 				<div id="headerSeparator2"></div>
 			</div><!-- end span12 -->
 		</div><!-- end row fluid -->
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
+	</div><!-- end div Panel -->
+</div><!-- end Content Area -->
+</section>
+
+<section id="top-mid-section">
+	<div class="container">
 		<div class="row-fluid"><!-- start row fluid -->
 			<div class="span12"><!-- start span 12 -->
 				<div class="span3">
@@ -88,10 +96,7 @@
 				</div>
 			</div><!-- end span 12 -->
 		</div><!-- end row fluid -->	
-
-	
-	</div><!-- end div Panel -->
-</div><!-- end Content Area -->
+	</div>
 </section>
 
 <section id="mid-section">
@@ -137,24 +142,6 @@
 				</div><!-- end footer area 1 -->
 				<div class="span3" id="footerArea2"><!-- start footer area 2 -->
 				&nbsp;
-<!--
-					<h3>Recent News</h3> 
-					<p>
-					<a href="#" title="">Lorem Ipsum is simply dummy text</a><br />
-					<span style="text-transform:none;">2 hours ago</span>
-					</p>
-					<p>
-					<a href="#" title="">Duis mollis, est non commodo luctus</a><br />
-					<span style="text-transform:none;">5 hours ago</span>
-					</p>
-					<p>
-					<a href="#" title="">Maecenas sed diam eget risus varius</a><br />
-					<span style="text-transform:none;">19 hours ago</span>
-					</p>
-					<p>
-					<a href="#" title="">VIEW ALL POSTS</a>
-					</p>
--->
 				</div><!-- end footer area 2 -->
 				<div class="span3" id="footerArea3"><!-- start footer area 3 -->
 					<h3>Social Networks</h3>      					

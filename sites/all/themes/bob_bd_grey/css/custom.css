@@ -92,13 +92,16 @@ margin: 0 auto;
 
 
 body{background-image: url('/sites/default/files/images/whitey.png'); background-color: rgb(255, 255, 255); background-repeat: repeat repeat;}
-#divHeaderText{padding: 100px 0px 54px; border-color: rgb(51, 51, 51); margin-top: 0px;}
+#divHeaderText{padding: 0 0px 54px; border-color: rgb(51, 51, 51); margin-top: 0px;}
 #divSiteTitle{font-family: Lobster, Georgia , serif; color: rgb(5, 5, 5); font-size: 120px; text-shadow: none; line-height: 80%; letter-spacing: 1px; text-transform: none;}
 #divHeaderLine1{letter-spacing: 0px; word-spacing: 0px; margin-top: 32px; color: rgb(47, 47, 47); font-size: 38px; line-height: 28px; font-family: Cuprum; text-transform: none; text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px;}
 #divHeaderLine2{font-size: 20px; line-height: 37px; letter-spacing: 1px; margin-top: 6px; text-transform: uppercase; font-family: Abel; color: rgb(110, 110, 110); text-shadow: none; text-align: left;}
-#divHeaderLine3{margin-top: 33px; font-family: Abel; font-size: 1.4em; line-height: 120%;  }
+#divHeaderLine3 { /* margin-top: 33px; */ font-family: Abel; font-size: 1.4em; line-height: 120%;  }
 
 #divTagLine{font-family: Abel; font-size: 20px; text-transform: uppercase; letter-spacing: 5px; line-height: 35px; color: rgb(0, 0, 0); text-shadow: none; padding-left: 3px; padding-right: 3px;}
+
+#divMenuRight {width:100%;margin-bottom: 20px;padding-top:10px; }
+
 /***** BASE CSS *****/
 
 
@@ -333,7 +336,7 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
 #footerOuterSeparator{margin-top: 55px; border-top-width: 0px; border-top-style: solid; border-top-color: rgb(95, 95, 95);}
 
-#headerSeparator{margin-top: 7px; border-top-color: rgb(51, 51, 51); border-top-width: 0px; border-top-style: solid; background-color: rgb(199, 199, 199); height: 0px;}
+#headerSeparator{/* margin-top: 7px; */ border-top-color: rgb(51, 51, 51); border-top-width: 0px; border-top-style: solid; background-color: rgb(199, 199, 199); height: 0px;}
 
 h3,.page-content h3 a{font-weight: normal; font-style: normal; ;font-family: Cuprum;}
 
@@ -394,7 +397,7 @@ h6,.page-content h6 a{font-weight: normal; font-style: normal; ;font-family: Cup
     #divHeaderLine1 {margin-top: 0px;}
      
     
-    #divMenuRight {width:100%;margin-top: 0px;padding-top:0px}
+    
 
     .ddmenu, .navbar .ddmenu {margin-top: 0px; margin-bottom: 0px;}
 

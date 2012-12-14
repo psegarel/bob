@@ -1,4 +1,4 @@
-section#header-section												{	/* padding: 40px 0 0 0; */
+section#top-mid-section												{	padding: 2em 0 0 0;
 																	}
 
 section#mid-section													{	background-image: url('/sites/default/files/images/background/wood_1.png'); 
@@ -13,13 +13,11 @@ section#mid-section													{	background-image: url('/sites/default/files/im
 
 
 section#footer-section												{	background: #121212;
-																		border-top: 30px solid #ccc;
-																		margin-top: 40px;
+																		border-top: 14px solid #ccc;
+																		margin-top: 80px;
 																	}
 
-section#about,
-section#gallery,
-section#content-section												{	/* padding: 20px 0; */
+section#content-section												{	padding: 4em 0 0 0;
 																	}
 																	
 
