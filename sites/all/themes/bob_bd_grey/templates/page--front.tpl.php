@@ -167,10 +167,10 @@
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Modal header</h3>
+    <h3 id="myModalLabel">Get in Touch</h3>
   </div>
   <div class="modal-body">
-    <p>Put the contact form here!</p>
+    <?php print custompage_view_tile( 'footer', $title=FALSE, $display_id = 'footer_block_2'); ?>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
