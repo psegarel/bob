@@ -29,12 +29,7 @@
 							</button>
 							<!-- Start Nav Collapse -->
 							<div class="nav-collapse collapse">
-								<ul class="nav nav-pills ddmenu">
-									<li class="dropdown"><a href="/">Home</a></li>
-									<li class="dropdown"><a href="/gallery">Gallery</a></li>
-									<li class="dropdown"><a href="/about">About</a></li>
-									<li class="dropdown"><a href="#myModal" data-toggle="modal">Contact</a></li>
-								</ul>
+								<?php print custompage_view_tile( 'navigation', $title=FALSE, $display_id = 'main_menu'); ?>
 							</div><!-- end Nav Collapse -->
 						</div><!-- end Nav Bar -->
 					</div><!-- end Menu Right -->
@@ -57,9 +52,12 @@
 	</div><!-- end divBoxed -->	
 </section>
 
-<!-- Main Content -->
-<?php print render($page['content']); ?>
-
+<section id="main-content">
+	<div class="container">
+		<!-- Main Content -->
+		<?php print render($page['content']); ?>
+	</div>
+</section>
 
 <section id="footer-section">
 	<div id="footerOuterSeparator"></div>
@@ -67,15 +65,7 @@
 		<div class="divPanel"><!-- start div panel -->
 			<div class="row-fluid"><!-- start row fluid-->
 				<div class="span3" id="footerArea1"><!-- start footer area 1 -->
-					<h3>About <?php print $site_name;?></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p><p> 
-<!--
-					<a href="#" title="Terms of Use">Terms of Use</a><br />
-					<a href="#" title="Privacy Policy">Privacy Policy</a><br />
-					<a href="#" title="FAQ">FAQ</a><br />
--->
-					<!-- <a href="#" title="Sitemap">Sitemap</a> -->
-					</p>
+					<?php print custompage_view_tile( 'footer', $title=FALSE, $display_id = 'footer_block_1' , 26); ?>
 				</div><!-- end footer area 1 -->
 				<div class="span3" id="footerArea2"><!-- start footer area 2 -->
 					<h3>Recent News</h3> 
@@ -96,41 +86,13 @@
 					</p>
 				</div><!-- end footer area 2 -->
 				<div class="span3" id="footerArea3"><!-- start footer area 3 -->
-					<h3>Social Networks</h3> 
-					<ul>
-						<li><a href="#"><span class="glyph social">e</span> Twitter</a></li>
-						<li><a href="#"><span class="glyph social">d</span> Facebook</a></li>
-						<li><a href="#"><span class="glyph social">r</span> Skype</a></li>
-						<li><a href="#"><span class="glyph social">o</span> SoundCloud</a></li>
-					</ul>			
+					<h3>Social Networks</h3>      					
+					<?php print custompage_view_tile( 'footer', $title=FALSE, $display_id = 'social_networks'); ?>		
 				</div><!-- end footer area 3 -->
 				<div class="span3" id="footerArea4"><!-- start footer area 4 -->
-					<h3>Get in Touch</h3>                
-					<ul id="contact-info">
-						<li>                                    
-							<span class="glyph general icon">r</span>
-							<span class="field">Phone:</span>
-							<br />
-							(123) 456 7890 / 456 7891                                                                      
-						</li>
-						<li>
-							<span class="glyph general icon">h</span>
-							
-							<span class="field">Email:</span>
-							<br />
-							<a href="mailto:info@yourdomain.com" title="Email">info@yourdomain.com</a>
-						</li>
-						<li>
-							<span class="glyph general icon" style="margin-bottom:50px">m</span>
-							
-							<span class="field">Address:</span>
-							<br />
-							123 Street<br />
-							12345 City, State<br />
-						Country
-						</li>
-					</ul>
-				</div><!-- start footer area 4 -->
+					<h3>Get in Touch</h3>     					
+					<?php print custompage_view_tile( 'footer', $title=FALSE, $display_id = 'footer_block_2'); ?>
+				</div><!-- end footer area 4 -->
 			</div><!-- end row fluid-->
 			<br /><br />
 			<div class="row-fluid"><!-- start row fluid-->

@@ -7,7 +7,7 @@ white-space: nowrap;
 }
 
 .tile {
-/* width: 240px !important; */
+height: 340px; !important;
 background-color: white;
 border: 1px solid #ccc;
 -moz-border-radius: 2px;

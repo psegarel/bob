@@ -14,9 +14,6 @@ regions[footer]         = 'Footer'
 
 stylesheets[all][] = bootstrap/css/bootstrap.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
-stylesheets[all][] = css/local.css
-
-
 
 ; Icons
 stylesheets[all][] = css/fonts/foundation-icons-general/stylesheets/foundation-icons-general.css
