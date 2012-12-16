@@ -84,7 +84,7 @@
 <section id="top-mid-section">
 	<div class="container">
 		<div class="row-fluid"><!-- start row fluid -->
-			<div class="span12"><!-- start span 12 -->
+			<div id="divHeaderLine5" class="span12" class="page-content"><!-- start span 12 -->
 				<div class="span3">
 					<img src="/sites/default/files/images/AllOfMe_02.png" alt="Book Cover"  title="Book Cover"/>
 				</div>

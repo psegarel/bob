@@ -36,6 +36,11 @@ section#content-section												{	padding: 4em 0 0 0;
 																		padding: 0;
 																	}
 
+#divHeaderLine5 													{ 	font-family: Abel; 
+																		font-size: 1.4em; 
+																		line-height: 120%;  
+																	}
+																	
 .thumbnails li.span4 												{	background-color: white;
 																		height: 340px;
 																	}
