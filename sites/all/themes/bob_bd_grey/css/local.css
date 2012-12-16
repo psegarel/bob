@@ -41,6 +41,9 @@ section#content-section												{	padding: 4em 0 0 0;
 																		line-height: 120%;  
 																	}
 																	
+a 																	{	color: #a99200;
+																	}
+
 .thumbnails li.span4 												{	background-color: white;
 																		height: 340px;
 																	}
@@ -59,6 +62,10 @@ section#content-section												{	padding: 4em 0 0 0;
 .btn-primary a														{	text-decoration: none;
 																		color: #fff;
 																		background: transparent;
+																	}
+
+.content-image														{	float: left;
+																		margin: 0 20px 20px 0;
 																	}
 
 .thumbnails iframe,
