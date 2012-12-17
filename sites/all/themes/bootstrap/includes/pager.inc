@@ -18,12 +18,13 @@
  *
  * @ingroup themeable
  */
-function twitter_bootstrap_pager($variables) {
+function bootstrap_pager($variables) {
   $output = "";
   $tags = $variables['tags'];
   $element = $variables['element'];
   $parameters = $variables['parameters'];
   $quantity = $variables['quantity'];
+
   global $pager_page_array, $pager_total;
 
   // Calculate various markers within this pager piece:
@@ -78,8 +79,8 @@ function twitter_bootstrap_pager($variables) {
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-          'class' => array('pager-ellipsis'), 
-          'data' => '…',
+          'class' => array('pager-ellipsis', 'disabled'),
+          'data' => '<a>…</a>',
         );
       }
       // Now generate the actual pager piece.
@@ -105,8 +106,8 @@ function twitter_bootstrap_pager($variables) {
       }
       if ($i < $pager_max) {
         $items[] = array(
-          'class' => array('pager-ellipsis'), 
-          'data' => '…',
+          'class' => array('pager-ellipsis', 'disabled'),
+          'data' => '<a>…</a>',
         );
       }
     }
@@ -126,7 +127,7 @@ function twitter_bootstrap_pager($variables) {
     }
     */
 
-    return '<div class="pagination">'. theme('item_list', array(
+    return '<div class="pagination pagination-centered">'. theme('item_list', array(
       'items' => $items, 
       //'attributes' => array('class' => array('pager')),
     )) . '</div>';

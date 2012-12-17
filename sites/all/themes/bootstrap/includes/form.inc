@@ -1,70 +1,28 @@
 <?php
 
-/*
-function twitter_bootstrap_button(&$vars) {
-  $element = $vars['element'];
-  $element['#attributes']['type'] = 'submit';
-  element_set_attributes($element, array('id', 'name', 'value'));
-  
-  $element['#attributes']['class'][] = 'btn'; // Add bootstrap class
-  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
-  if (!empty($element['#attributes']['disabled'])) {
-    $element['#attributes']['class'][] = 'form-button-disabled';
-  }
-
-  return '<input' . drupal_attributes($element['#attributes']) . ' />';
-}
-*/
-/**
- * Returns HTML for a form.
- *
- * @param $vars
- *   An associative array containing:
- *   - element: An associative array containing the properties of the element.
- *     Properties used: #action, #method, #attributes, #children
- *
- * @ingroup themeable
- 
-
-function twitter_bootstrap_preprocess_form(&$variables) {
-}  
-
-function twitter_bootstrap_form($variables) {
-  $element = $variables['element'];
-  if (isset($element['#action'])) {
-    $element['#attributes']['action'] = drupal_strip_dangerous_protocols($element['#action']);
-  }
-  
-  element_set_attributes($element, array('method', 'id'));
-  if (empty($element['#attributes']['accept-charset'])) {
-    $element['#attributes']['accept-charset'] = "UTF-8";
-  }
-
-  return '<form' . drupal_attributes($element['#attributes']) . '>' . $element['#children'] . '</form>';
-}
-*/
-
 /**
  * Implements hook_form_alter().
  */
-function twitter_bootstrap_form_alter(&$form, &$form_state, $form_id) {
+function bootstrap_form_alter(&$form, &$form_state, $form_id) {
   // Id's of forms that should be ignored
   // Make this configurable?
   $form_ids = array(
     'node_form',
     'system_site_information_settings',
     'user_profile_form',
+    'node_delete_confirm',
   );
   
   // Only wrap in container for certain form
-  if(isset($form['#form_id']) && !in_array($form['#form_id'], $form_ids) && !isset($form['#node_edit_form']))
+  if (isset($form['#form_id']) && !in_array($form['#form_id'], $form_ids) && !isset($form['#node_edit_form'])) {
     $form['actions']['#theme_wrappers'] = array();
+  }
 }  
 
 /**
  * Returns HTML for a form element.
  */
-function twitter_bootstrap_form_element(&$variables) {
+function bootstrap_form_element(&$variables) {
   $element = &$variables['element'];
   // This is also used in the installer, pre-database setup.
   $t = get_t();
@@ -80,8 +38,15 @@ function twitter_bootstrap_form_element(&$variables) {
     $attributes['id'] = $element['#id'];
   }
 
+  $exclude_control = FALSE;
+  $control_wrapper = '<div class="controls">';
   // Add bootstrap class
-  $attributes['class'] = array('control-group');
+  if ($element['#type'] == "radio" || $element['#type'] == "checkbox") {
+    $exclude_control = TRUE;
+  }
+  else {
+    $attributes['class'] = array('control-group');
+  }
 
   // Check for errors and set correct error class
   if (isset($element['#parents']) && form_get_error($element)) {
@@ -98,6 +63,7 @@ function twitter_bootstrap_form_element(&$variables) {
   if (!empty($element['#attributes']['disabled'])) {
     $attributes['class'][] = 'form-disabled';
   }
+  $attributes['class'][] = 'form-item';
   $output = '<div' . drupal_attributes($attributes) . '>' . "\n";
 
   // If #title is not set, we don't display any label or required marker.
@@ -107,16 +73,26 @@ function twitter_bootstrap_form_element(&$variables) {
   $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
   $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
 
+  // Prepare input whitelist - added to ensure ajax functions don't break
+  $whitelist = _bootstrap_element_whitelist();
+
   switch ($element['#title_display']) {
     case 'before':
     case 'invisible':
       $output .= ' ' . theme('form_element_label', $variables);
-      $output .= '<div class="controls">';
-      $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      // Check if item exists in element whitelist
+      if (isset($element['#id']) && in_array($element['#id'], $whitelist)) {
+        $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+        $exclude_control = TRUE;
+      }
+      else {
+        $output = $exclude_control ? $output : $output.$control_wrapper;
+        $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      }
       break;
 
     case 'after':
-      $output .= '<div class="controls">';
+      $output = $exclude_control ? $output : $output.$control_wrapper;
       $variables['#children'] = ' ' . $prefix . $element['#children'] . $suffix;
       $output .= ' ' . theme('form_element_label', $variables) . "\n";
       break;
@@ -124,7 +100,7 @@ function twitter_bootstrap_form_element(&$variables) {
     case 'none':
     case 'attribute':
       // Output no label and no required marker, only the children.
-      $output .= '<div class="controls">';
+      $output = $exclude_control ? $output : $output.$control_wrapper;
       $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
       break;
   }
@@ -133,15 +109,20 @@ function twitter_bootstrap_form_element(&$variables) {
     $output .= '<p class="help-block">' . $element['#description'] . "</p>\n";
   }
 
-  $output .= "</div></div>\n";
-
+  // Check if control wrapper was added to ensure we close div correctly
+  if ($exclude_control) {
+    $output .= "</div>\n";
+  }
+  else {
+    $output .= "</div></div>\n";
+  }
   return $output;
 }
 
 /**
  * Returns HTML for a form element label and required marker.
  */
-function twitter_bootstrap_form_element_label(&$variables) {
+function bootstrap_form_element_label(&$variables) {
   $element = $variables['element'];
   // This is also used in the installer, pre-database setup.
   $t = get_t();
@@ -171,9 +152,10 @@ function twitter_bootstrap_form_element_label(&$variables) {
     $attributes['for'] = $element['#id'];
   }
 
-  // @Bootstrap: Add Bootstrap control-label class.
-  $attributes['class'][] = 'control-label';
-
+  // @Bootstrap: Add Bootstrap control-label class except for radio.
+  if ($element['#type'] != 'radio') {
+    $attributes['class'][] = 'control-label';
+  }
   // @Bootstrap: Insert radio and checkboxes inside label elements.
   $output = '';
   if ( isset($variables['#children']) ) {
@@ -190,7 +172,7 @@ function twitter_bootstrap_form_element_label(&$variables) {
 /**
  * Preprocessor for theme('button').
  */
-function twitter_bootstrap_preprocess_button(&$vars) {
+function bootstrap_preprocess_button(&$vars) {
   $vars['element']['#attributes']['class'][] = 'btn';
 
   if (isset($vars['element']['#value'])) {
@@ -231,7 +213,7 @@ function twitter_bootstrap_preprocess_button(&$vars) {
 /**
  * Returns HTML for a button form element.
  */
-function twitter_bootstrap_button($variables) {
+function bootstrap_button($variables) {
   $element = $variables['element'];
   $label = check_plain($element['#value']);
   element_set_attributes($element, array('id', 'name', 'value', 'type'));
@@ -241,7 +223,33 @@ function twitter_bootstrap_button($variables) {
     $element['#attributes']['class'][] = 'form-button-disabled';
   }
 
-  return '<button' . drupal_attributes($element['#attributes']) . '>'. $label .'</button>
-  '; // This line break adds inherent margin between multiple buttons
+  // Prepare input whitelist - added to ensure ajax functions don't break
+  $whitelist = _bootstrap_element_whitelist();
+
+  if (in_array($element['#id'], $whitelist)) {
+    return '<input' . drupal_attributes($element['#attributes']) . ">\n"; // This line break adds inherent margin between multiple buttons
+  }
+  else {
+    return '<button' . drupal_attributes($element['#attributes']) . '>'. $label ."</button>\n"; // This line break adds inherent margin between multiple buttons
+  }
 }
 
+/**
+ * Returns an array containing ids of any whitelisted drupal elements
+ */
+function _bootstrap_element_whitelist() {
+/**
+ * Why whitelist an element?
+ * The reason is to provide a list of elements we wish to exclude
+ * from certain modifications made by the bootstrap theme which
+ * break core functionality - e.g. ajax.
+ */
+  return array(
+    'edit-refresh',
+    'edit-pass-pass1',
+    'edit-pass-pass2',
+    'panels-ipe-cancel',
+    'panels-ipe-customize-page',
+    'panels-ipe-save',
+  );
+}
