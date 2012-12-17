@@ -1,0 +1,22 @@
+name = Bob Bellows, Bootstrap Grey subtheme
+description = Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.
+version = 2.0
+core = 7.x
+
+base theme = bootstrap
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+
+; Icons
+stylesheets[all][] = css/fonts/foundation-icons-general/stylesheets/foundation-icons-general.css
+stylesheets[all][] = css/fonts/foundation-icons-social/stylesheets/foundation-icons-social.css
+
+stylesheets[all][] = css/local.css
+stylesheets[all][] = css/custom.css
