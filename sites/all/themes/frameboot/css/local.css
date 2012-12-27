@@ -1,0 +1,90 @@
+section#top-mid-section												{	padding: 2em 0 0 0;
+																	}
+
+section#mid-section													{	background-image: url('/sites/default/files/images/background/wood_1.png'); 
+																		background-color: rgb(255, 255, 255); 
+																		background-repeat: repeat repeat;
+																		padding: 2em 0;
+																		margin: 100px 0;
+																		color: #fff;
+																		border-top: 20px solid #222;
+																		border-bottom: 4px solid #000;
+																	}
+
+
+section#footer-section												{	background: #121212;
+																		border-top: 14px solid #ccc;
+																		margin-top: 80px;
+																	}
+
+section#content-section												{	/* padding: 4em 0 0 0; */
+																	}
+																	
+
+#copyright															{	font-family: 'Century Gothic', sans-serif;
+																		text-transform: uppercase;
+																		font-size: 10px;
+																		padding-top: 20px;
+																	}
+
+#drupal-header														{	padding: 40px 0;
+																	}
+
+#footerArea3 ul,
+#footerArea4 ul														{	list-style: none;
+																		margin: 0;
+																		padding: 0;
+																	}
+
+#divHeaderLine5 													{ 	font-family: Abel; 
+																		font-size: 1.4em; 
+																		line-height: 120%;  
+																	}
+																	
+a 																	{	color: #a99200;
+																	}
+
+.thumbnails li.span4 												{	background-color: white;
+																		height: 340px;
+																	}
+
+.thumbnails li h4 a 												{	line-height: inherit;
+																		margin: 0;
+																		text-decoration: inherit;
+																		color: inherit;
+																		font-size: inherit;
+																		font-family: inherit;
+																		font-weight: inherit;
+																		font-style: inherit;
+																		
+																	}
+
+.btn-primary a														{	text-decoration: none;
+																		color: #fff;
+																		background: transparent;
+																	}
+
+.content-image														{	float: left;
+																		margin: 0 20px 20px 0;
+																	}
+
+.thumbnails iframe,
+.thumbnails h4,
+.thumbnails img,
+.thumbnails p		 												{	padding-left: 10px;
+																	}
+
+.more																{	font-family: 'Century Gothic' , sans-serif;
+																		font-size: 11px;
+																		text-transform: uppercase;
+																	}
+
+.italic																{	font-style: italic;
+																	}
+																	
+.main-image															{	margin: 30px 0;
+																	}
+																	
+.tile																{	background: white;
+																		padding: 10px;
+																	}
