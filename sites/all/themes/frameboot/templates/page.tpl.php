@@ -15,6 +15,11 @@
 				<div class="span6">								
 					<div id="divHeaderLine1" class="pull-right">International Pianist</div>
 					<div id="divHeaderLine2" class="pull-right">Singer Entertainer Writer Composer Lecturer</div>
+					<div class="row">
+						<div id="awards-logo" class="span3 offset3 pull-right">
+							<a href="/awards"><img src="/sites/default/files/images/awards.png" width="200px" alt="awards" title="awards" /></a>
+						</div>
+					</div>
 				</div>
 			</div><!-- end row fluid	 -->
 			<div class="row-fluid">

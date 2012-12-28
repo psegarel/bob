@@ -14,7 +14,26 @@ section#footer-section													{	background: #121212;
 /*________________________________________________________________________________________________*/
 
 
+#quote																	{	font-family: Lobster, Georgia , serif; 
+																			color: #555; 
+																			font-size: 30px; 
+																			text-shadow: none; 
+																			line-height: 110%; 
+																			letter-spacing: 1px; 
+																			text-transform: none;
+																			padding: 0 0 0 2em;
+																			margin-top: 1em;
+																			margin-bottom: 3em;
+																			/* text-align: center; */
+																			border-left: 10px solid #555;
+																			
+																		}
+
 #awards																	{	font-family: 'Abel' , sans-serif;
 																			font-size: 18px;
 																			line-height: 180%;
+																		}
+
+
+#awards-logo															{	padding: 40px 0 0 0;
 																		}																		

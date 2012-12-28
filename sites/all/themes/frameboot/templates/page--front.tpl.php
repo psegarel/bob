@@ -15,6 +15,11 @@
 				<div class="span6">								
 					<div id="divHeaderLine1" class="pull-right">International Pianist</div>
 					<div id="divHeaderLine2" class="pull-right">Singer Entertainer Writer Composer Lecturer</div>
+					<div class="row">
+						<div id="awards-logo" class="span3 offset2 pull-right">
+							<a href="/awards"><img src="/sites/default/files/images/awards.png" width="200px" alt="awards" title="awards" /></a>
+						</div>
+					</div>
 				</div>
 			</div><!-- end row fluid	 -->
 			<div class="row-fluid">
@@ -82,6 +87,12 @@
 
 <section id="top-mid-section">
 	<div class="container">
+		<div class="row-fluid">
+			<div id="quote" class="span10 offset1">
+				<p>"Music is a moral law. It gives soul to the universe, wings to the mind, flight to the imagination, and charm and gaiety to life and to everything."</p>
+				<p>Plato.</p>
+			</div>
+		</div>
 		<div class="row-fluid"><!-- start row fluid -->
 			<div id="divHeaderLine5" class="span12" class="page-content"><!-- start span 12 -->
 				<div class="span3">
