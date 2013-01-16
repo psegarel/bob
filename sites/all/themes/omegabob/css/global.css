@@ -1,0 +1,82 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/* line 5, ../sass/global.scss */
+body {
+  background-image: url("/sites/default/files/images/whitey.png");
+  background-repeat: repeat repeat;
+}
+
+/* line 10, ../sass/global.scss */
+h1.site-name a {
+  font-family: Lobster, Georgia, serif;
+  color: #121212;
+  text-shadow: none;
+  line-height: 80%;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
+/* line 20, ../sass/global.scss */
+h6.site-slogan,
+#block-boxes-subtitle p,
+#boxes-box-robert_brusen {
+  font-family: Cuprum;
+  color: #777777;
+}
+
+/* line 24, ../sass/global.scss */
+h6.site-slogan {
+  color: #444444;
+}
+
+/* line 28, ../sass/global.scss */
+#block-boxes-subtitle p,
+#boxes-box-robert_brusen {
+  color: #777777;
+}
+
+/* line 31, ../sass/global.scss */
+#block-views-references-front-reference {
+  font-family: Abel;
+  font-size: 1.4em;
+  line-height: 120%;
+}
+
+/* line 37, ../sass/global.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 40, ../sass/global.scss */
+ul.nav li {
+  list-style: none;
+  display: inline;
+}
+/* line 42, ../sass/global.scss */
+ul.nav li a {
+  text-decoration: none;
+  font-family: Abel;
+  font-size: 18px;
+  text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px;
+  line-height: 26px;
+  padding: 7px 18px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  color: #333333;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-bottom-style: none;
+}
+/* line 57, ../sass/global.scss */
+ul.nav li a:hover {
+  color: #333333;
+  background-color: whitesmoke;
+  border-bottom-style: none;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}

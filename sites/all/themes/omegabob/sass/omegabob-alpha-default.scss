@@ -1,0 +1,75 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+@import 'base';
+
+#zone-user-wrapper	{	padding-top: 20px;
+					}
+
+#zone-branding-wrapper	{	
+						}					
+
+#region-user-first	{	margin-bottom: 0;
+}
+
+#zone-branding-wrapper,
+#region-user-second	{	.region-inner	{	float: right;
+										}
+					}
+
+h1.site-name a	{	font-size: $title_size;
+					font-weight: normal;
+				}
+
+h6.site-slogan,
+#block-boxes-subtitle p,
+#boxes-box-robert_brusen		{	letter-spacing: 0px; 
+									word-spacing: 0px; 
+									font-family: Cuprum; 
+									text-transform: none; 
+									text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px;
+								}
+
+h6.site-slogan	{	margin-top: 32px; 
+					font-size: $slogan_size; 
+					line-height: 28px; 
+				}
+
+#block-boxes-subtitle p		{	font-size: $subtitle_size; 
+							}
+
+#boxes-box-robert_brusen	{	font-size: $subtitle_size * 1.2; 
+								text-transform: uppercase;
+							}	
+								
+#block-views-references-front-reference	{	font-family: Abel; 
+											font-size: $lead; 
+											line-height: 120%; 
+										}
+
+ul.nav	{	li	{	list-style: none;
+					display: inline;
+					a 	{	text-decoration: none;
+							font-family: Abel; 
+							font-size: 18px; 
+							text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px; 
+							line-height: 26px;
+							padding: 7px 34px; 
+							border-top-left-radius: 16px; 
+							border-top-right-radius: 16px; 
+							border-bottom-right-radius: 16px; 
+							border-bottom-left-radius: 16px; 
+							color: rgb(51, 51, 51); 
+							margin-right: 2px; 
+							margin-left: 2px; 
+							border-bottom-style: none;
+						}
+					a:hover {	color: rgb(51, 51, 51); 
+								background-color: rgb(245, 245, 245); 
+								border-bottom-style: none;
+								-webkit-transition: ease-in-out .2s;
+								-moz-transition: ease-in-out .2s;
+								-o-transition: ease-in-out .2s;
+								-ms-transition: ease-in-out .2s; 
+								transition: ease-in-out .2s;
+							}
+				}
+		}							

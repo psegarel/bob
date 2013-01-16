@@ -1,0 +1,92 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/* line 4, ../sass/omegabob-alpha-default.scss */
+#zone-user-wrapper {
+  padding-top: 20px;
+}
+
+/* line 10, ../sass/omegabob-alpha-default.scss */
+#region-user-first {
+  margin-bottom: 0;
+}
+
+/* line 14, ../sass/omegabob-alpha-default.scss */
+#zone-branding-wrapper .region-inner,
+#region-user-second .region-inner {
+  float: right;
+}
+
+/* line 18, ../sass/omegabob-alpha-default.scss */
+h1.site-name a {
+  font-size: 120px;
+  font-weight: normal;
+}
+
+/* line 24, ../sass/omegabob-alpha-default.scss */
+h6.site-slogan,
+#block-boxes-subtitle p,
+#boxes-box-robert_brusen {
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  font-family: Cuprum;
+  text-transform: none;
+  text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px;
+}
+
+/* line 31, ../sass/omegabob-alpha-default.scss */
+h6.site-slogan {
+  margin-top: 32px;
+  font-size: 38px;
+  line-height: 28px;
+}
+
+/* line 36, ../sass/omegabob-alpha-default.scss */
+#block-boxes-subtitle p {
+  font-size: 18px;
+}
+
+/* line 39, ../sass/omegabob-alpha-default.scss */
+#boxes-box-robert_brusen {
+  font-size: 21.6px;
+  text-transform: uppercase;
+}
+
+/* line 43, ../sass/omegabob-alpha-default.scss */
+#block-views-references-front-reference {
+  font-family: Abel;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+/* line 48, ../sass/omegabob-alpha-default.scss */
+ul.nav li {
+  list-style: none;
+  display: inline;
+}
+/* line 50, ../sass/omegabob-alpha-default.scss */
+ul.nav li a {
+  text-decoration: none;
+  font-family: Abel;
+  font-size: 18px;
+  text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px;
+  line-height: 26px;
+  padding: 7px 34px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  color: #333333;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-bottom-style: none;
+}
+/* line 65, ../sass/omegabob-alpha-default.scss */
+ul.nav li a:hover {
+  color: #333333;
+  background-color: whitesmoke;
+  border-bottom-style: none;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}

@@ -1,0 +1,19 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+ @import 'base';
+
+$ratio: 1.67;
+
+h1.site-name a	{	font-size: $title_size/$ratio;
+				}
+h6.site-slogan	{	font-size: $slogan_size/$ratio;
+				}
+
+#block-boxes-subtitle p		{	font-size: $subtitle_size/$ratio;; 
+							}
+
+#boxes-box-robert_brusen	{	font-size: $subtitle_size * 1.2/$ratio;
+								text-transform: uppercase;
+							}

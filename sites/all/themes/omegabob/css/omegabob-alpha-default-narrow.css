@@ -1,0 +1,24 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+/* line 9, ../sass/omegabob-alpha-default-narrow.scss */
+h1.site-name a {
+  font-size: 71.85629px;
+}
+
+/* line 11, ../sass/omegabob-alpha-default-narrow.scss */
+h6.site-slogan {
+  font-size: 22.75449px;
+}
+
+/* line 14, ../sass/omegabob-alpha-default-narrow.scss */
+#block-boxes-subtitle p {
+  font-size: 10.77844px;
+}
+
+/* line 17, ../sass/omegabob-alpha-default-narrow.scss */
+#boxes-box-robert_brusen {
+  font-size: 12.93413px;
+  text-transform: uppercase;
+}

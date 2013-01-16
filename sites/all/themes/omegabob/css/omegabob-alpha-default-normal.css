@@ -1,0 +1,23 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+/* line 8, ../sass/omegabob-alpha-default-normal.scss */
+h1.site-name a {
+  font-size: 96px;
+}
+
+/* line 10, ../sass/omegabob-alpha-default-normal.scss */
+h6.site-slogan {
+  font-size: 30.4px;
+}
+
+/* line 13, ../sass/omegabob-alpha-default-normal.scss */
+#block-boxes-subtitle p {
+  font-size: 14.4px;
+}
+
+/* line 16, ../sass/omegabob-alpha-default-normal.scss */
+#boxes-box-robert_brusen {
+  font-size: 17.28px;
+  text-transform: uppercase;
+}
