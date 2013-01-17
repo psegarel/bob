@@ -22,3 +22,14 @@ h6.site-slogan {
   font-size: 12.93413px;
   text-transform: uppercase;
 }
+
+/* Videos don't scale so hide the three videos row */
+/* line 22, ../sass/omegabob-alpha-default-narrow.scss */
+#region-postscript-first {
+  display: none;
+}
+
+/* line 25, ../sass/omegabob-alpha-default-narrow.scss */
+#region-postscript-second {
+  display: block;
+}

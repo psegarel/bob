@@ -4,10 +4,75 @@
 body {
   background-image: url("/sites/default/files/images/whitey.png");
   background-repeat: repeat repeat;
+  font-family: Abel;
 }
 
-/* line 10, ../sass/global.scss */
-h1.site-name a {
+/* line 11, ../sass/global.scss */
+#zone-preface-wrapper {
+  margin-bottom: 6em;
+}
+
+/* line 14, ../sass/global.scss */
+#zone-content-wrapper {
+  background: url("/sites/default/files/images/pw_maze_black.png");
+  background-color: #121212;
+  background-repeat: repeat;
+  padding: 3em 0;
+  margin: 2em 0;
+  color: #fff;
+  font-size: 1.2em;
+}
+/* line 22, ../sass/global.scss */
+#zone-content-wrapper h2 {
+  font-family: Abel, "Arial Narrow", sans-serif;
+  padding-top: 2em;
+}
+
+/* line 28, ../sass/global.scss */
+#zone-footer-wrapper {
+  background: url("/sites/default/files/images/pw_maze_black.png");
+  background-color: #121212;
+  background-repeat: repeat;
+  border-top: 10px solid #777777;
+  color: #fff;
+  padding: 4em 0 8em 0;
+  margin-top: 4em;
+}
+/* line 36, ../sass/global.scss */
+#zone-footer-wrapper h2, #zone-footer-wrapper h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* line 41, ../sass/global.scss */
+#zone-footer-wrapper a {
+  color: #a99200;
+  text-decoration: none;
+  margin-left: 10px;
+}
+/* line 44, ../sass/global.scss */
+#zone-footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* line 49, ../sass/global.scss */
+#region-postscript-first {
+  display: block;
+}
+
+/* line 52, ../sass/global.scss */
+#region-postscript-second {
+  display: none;
+}
+
+/* line 55, ../sass/global.scss */
+#zone-postscript-wrapper {
+  margin: 2em 0;
+}
+
+/* line 59, ../sass/global.scss */
+h1.site-name a,
+h2.site-name a {
   font-family: Lobster, Georgia, serif;
   color: #121212;
   text-shadow: none;
@@ -16,7 +81,19 @@ h1.site-name a {
   text-transform: none;
 }
 
-/* line 20, ../sass/global.scss */
+/* line 67, ../sass/global.scss */
+h2, h3, h4, h5, h6 {
+  font-family: Cuprum, "Arial Narrow", sans-serif;
+}
+
+/* line 70, ../sass/global.scss */
+h2.block-title {
+  font-family: Cuprum, "Arial Narrow", sans-serif;
+  font-size: 30px;
+  color: #777777;
+}
+
+/* line 77, ../sass/global.scss */
 h6.site-slogan,
 #block-boxes-subtitle p,
 #boxes-box-robert_brusen {
@@ -24,35 +101,93 @@ h6.site-slogan,
   color: #777777;
 }
 
-/* line 24, ../sass/global.scss */
+/* line 81, ../sass/global.scss */
 h6.site-slogan {
-  color: #444444;
+  color: #555555;
 }
 
-/* line 28, ../sass/global.scss */
+/* line 87, ../sass/global.scss */
+.more {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+/* line 91, ../sass/global.scss */
+.more a {
+  color: #a99200;
+  text-decoration: none;
+}
+/* line 94, ../sass/global.scss */
+.more a:hover {
+  text-decoration: underline;
+}
+
+/* line 100, ../sass/global.scss */
 #block-boxes-subtitle p,
 #boxes-box-robert_brusen {
   color: #777777;
 }
 
-/* line 31, ../sass/global.scss */
+/* line 104, ../sass/global.scss */
+#block-views-front-page-items-all-of-me,
 #block-views-references-front-reference {
   font-family: Abel;
   font-size: 1.4em;
   line-height: 120%;
 }
+/* line 108, ../sass/global.scss */
+#block-views-front-page-items-all-of-me h3,
+#block-views-references-front-reference h3 {
+  font-family: Abel;
+  font-weight: bold;
+  font-size: 2em;
+  color: #555555;
+  margin-top: 20px;
+}
+/* line 115, ../sass/global.scss */
+#block-views-front-page-items-all-of-me img,
+#block-views-references-front-reference img {
+  display: none;
+}
 
-/* line 37, ../sass/global.scss */
+/* line 119, ../sass/global.scss */
+#block-views-links-badge .badge {
+  text-align: center;
+  width: 90%;
+  padding: 1em;
+  background: #121212;
+}
+
+/* line 125, ../sass/global.scss */
+#boxes-box-plato {
+  padding: 2em 0 20px 0;
+}
+/* line 127, ../sass/global.scss */
+#boxes-box-plato p {
+  font-family: Lobster, Georgia, serif;
+  color: #555555;
+  font-size: 20px;
+  text-shadow: none;
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: none;
+  padding: 0 0 0 20px;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  border-left: 10px solid #555555;
+}
+
+/* line 141, ../sass/global.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 40, ../sass/global.scss */
+/* line 144, ../sass/global.scss */
 ul.nav li {
   list-style: none;
   display: inline;
 }
-/* line 42, ../sass/global.scss */
+/* line 146, ../sass/global.scss */
 ul.nav li a {
   text-decoration: none;
   font-family: Abel;
@@ -69,7 +204,7 @@ ul.nav li a {
   margin-left: 2px;
   border-bottom-style: none;
 }
-/* line 57, ../sass/global.scss */
+/* line 161, ../sass/global.scss */
 ul.nav li a:hover {
   color: #333333;
   background-color: whitesmoke;
@@ -79,4 +214,20 @@ ul.nav li a:hover {
   -o-transition: ease-in-out 0.2s;
   -ms-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
+}
+
+/* line 173, ../sass/global.scss */
+.tile {
+  background: none;
+  width: 98%;
+  border: none;
+  padding: 10px 0 20px 0;
+}
+/* line 178, ../sass/global.scss */
+.tile h4 {
+  font-family: "Cuprum", "Abel", "Arial Narrow", sans-serif;
+  text-decoration: none;
+  color: #777777;
+  margin: 20px 0 2px 10px;
+  letter-spacing: -.1em;
 }

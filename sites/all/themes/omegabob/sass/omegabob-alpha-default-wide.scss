@@ -1,2 +1,15 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
 @import 'base';
+
+/* Show the three videos row */							
+#region-postscript-first	{	display: block;
+							}
+
+#region-postscript-second	{	display: none;
+							}
+
+.tile	{	background: #fff;
+			width: 98%;
+			border: 1px solid #bbb;
+			padding: 10px 0 20px 0;
+		}							

@@ -4,15 +4,72 @@
 
 body	{	background-image: url('/sites/default/files/images/whitey.png'); 
 			background-repeat: repeat repeat;
+			font-family: Abel;
 		}
 
 
-h1.site-name a	{	font-family: Lobster, Georgia , serif; 
+#zone-preface-wrapper	{	margin-bottom: 6em;
+						}
+						
+#zone-content-wrapper	{	background: url('/sites/default/files/images/pw_maze_black.png'); 
+							background-color: $darkest;
+							background-repeat: repeat;
+							padding: 3em 0;
+							margin: 2em 0;
+							color: #fff;
+							font-size: 1.2em;
+							
+							h2	{	font-family: Abel, 'Arial Narrow', sans-serif;
+									padding-top: 2em;
+								}
+						}
+
+
+#zone-footer-wrapper	{	background: url('/sites/default/files/images/pw_maze_black.png');
+							background-color: $darkest;
+							background-repeat: repeat;
+							border-top: 10px solid $light_grey;
+							color: #fff;
+							padding: 4em 0 8em 0;
+							margin-top: 4em;
+							
+							h2 , h3	{	color: #fff;
+										font-size: $lead;
+										margin-bottom: 10px;
+									}
+							
+							a 	{ 	color: $link1;
+									text-decoration: none;
+									margin-left: 10px;
+									&:hover	{	text-decoration: underline;
+											}
+								}	
+						}
+
+#region-postscript-first	{	display: block;
+							}
+
+#region-postscript-second	{	display: none;
+							}						
+
+#zone-postscript-wrapper	{	margin: 2em 0;
+							}
+
+h1.site-name a,
+h2.site-name a	{	font-family: Lobster, Georgia , serif; 
 					color: $darkest; 
 					text-shadow: none; 
 					line-height: 80%; 
 					letter-spacing: 1px; 
 					text-transform: none;
+				}
+
+h2 , h3 , h4 , h5 , h6	{	font-family: Cuprum , 'Arial Narrow' , sans-serif;
+						}				
+
+h2.block-title	{	font-family: Cuprum , 'Arial Narrow' , sans-serif;
+					font-size: $lead*1.5;
+					color: $medium_grey;
 				}
 
 h6.site-slogan,
@@ -24,15 +81,62 @@ h6.site-slogan,
 h6.site-slogan					{	color: $dark_grey;
 								}
 
+
+
+	
+.more							{	font-family: 'Century Gothic' , sans-serif;
+									font-size: 11px;
+									text-transform: uppercase;
+									
+									a 	{ 	color: $link1;
+											text-decoration: none;
+											
+											&:hover {	text-decoration: underline;
+													}
+										}
+								}
+
 #block-boxes-subtitle p,
 #boxes-box-robert_brusen		{	color: $medium_grey;
 								}
 								
+#block-views-front-page-items-all-of-me,
 #block-views-references-front-reference	{	font-family: Abel; 
 											font-size: 1.4em; 
 											line-height: 120%; 
+											
+											h3	{ 	font-family: Abel; 
+													font-weight: bold;
+													font-size: 2em;
+													color: $dark_grey;
+													margin-top: 20px;
+											}
+											
+											img	{	display: none;
+												}
 										}
 
+#block-views-links-badge .badge	{	text-align: center;
+									width: 90%;
+									padding: 1em;
+									background: $darkest;
+								}
+
+#boxes-box-plato	{		padding: 2em 0 20px 0;
+
+							p {	font-family: Lobster, Georgia , serif; 
+								color: $dark_grey; 
+								font-size: 20px; 
+								text-shadow: none; 
+								line-height: 110%; 
+								letter-spacing: 1px; 
+								text-transform: none;
+								padding: 0 0 0 20px;
+								margin-top: 1em;
+								margin-bottom: 3em;
+								border-left: 10px solid $dark_grey;
+							}
+					}
 
 .italic	{	font-style: italic;
 		}
@@ -65,5 +169,27 @@ ul.nav	{	li	{	list-style: none;
 							}
 				}
 		}
-		
-									
+
+.tile	{	background: none;
+			width: 98%;
+			border: none;
+			padding: 10px 0 20px 0;
+			
+			h4	{	font-family: 'Cuprum' , 'Abel' , 'Arial Narrow' , sans-serif;
+					text-decoration: none;
+					color: $medium_grey;
+					margin: 20px 0 2px 10px;
+					letter-spacing: -.1em;
+				}
+		}
+
+
+
+
+
+
+
+
+
+
+

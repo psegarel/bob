@@ -1,1 +1,19 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
+/* Show the three videos row */
+/* line 5, ../sass/omegabob-alpha-default-wide.scss */
+#region-postscript-first {
+  display: block;
+}
+
+/* line 8, ../sass/omegabob-alpha-default-wide.scss */
+#region-postscript-second {
+  display: none;
+}
+
+/* line 11, ../sass/omegabob-alpha-default-wide.scss */
+.tile {
+  background: #fff;
+  width: 98%;
+  border: 1px solid #bbbbbb;
+  padding: 10px 0 20px 0;
+}

@@ -1,27 +1,34 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
-/* line 4, ../sass/omegabob-alpha-default.scss */
+/* line 5, ../sass/omegabob-alpha-default.scss */
+#zone-preface,
 #zone-user-wrapper {
   padding-top: 20px;
 }
 
-/* line 10, ../sass/omegabob-alpha-default.scss */
-#region-user-first {
-  margin-bottom: 0;
-}
-
-/* line 14, ../sass/omegabob-alpha-default.scss */
+/* line 12, ../sass/omegabob-alpha-default.scss */
 #zone-branding-wrapper .region-inner,
 #region-user-second .region-inner {
   float: right;
 }
 
-/* line 18, ../sass/omegabob-alpha-default.scss */
-h1.site-name a {
+/* line 16, ../sass/omegabob-alpha-default.scss */
+#region-user-first {
+  margin-bottom: 0;
+}
+
+/* line 19, ../sass/omegabob-alpha-default.scss */
+#region-postscript-second {
+  display: none;
+}
+
+/* line 23, ../sass/omegabob-alpha-default.scss */
+h1.site-name a,
+h2.site-name a {
   font-size: 120px;
   font-weight: normal;
 }
 
-/* line 24, ../sass/omegabob-alpha-default.scss */
+/* line 29, ../sass/omegabob-alpha-default.scss */
 h6.site-slogan,
 #block-boxes-subtitle p,
 #boxes-box-robert_brusen {
@@ -32,37 +39,79 @@ h6.site-slogan,
   text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px;
 }
 
-/* line 31, ../sass/omegabob-alpha-default.scss */
+/* line 36, ../sass/omegabob-alpha-default.scss */
 h6.site-slogan {
   margin-top: 32px;
   font-size: 38px;
   line-height: 28px;
 }
 
-/* line 36, ../sass/omegabob-alpha-default.scss */
+/* line 41, ../sass/omegabob-alpha-default.scss */
 #block-boxes-subtitle p {
   font-size: 18px;
 }
 
-/* line 39, ../sass/omegabob-alpha-default.scss */
+/* line 44, ../sass/omegabob-alpha-default.scss */
 #boxes-box-robert_brusen {
   font-size: 21.6px;
   text-transform: uppercase;
 }
 
-/* line 43, ../sass/omegabob-alpha-default.scss */
+/* line 49, ../sass/omegabob-alpha-default.scss */
+#block-views-front-page-items-all-of-me,
 #block-views-references-front-reference {
   font-family: Abel;
-  font-size: 20px;
+  font-size: 1.4em;
   line-height: 120%;
 }
+/* line 53, ../sass/omegabob-alpha-default.scss */
+#block-views-front-page-items-all-of-me h3,
+#block-views-references-front-reference h3 {
+  font-family: Abel;
+  font-weight: bold;
+  font-size: 2em;
+  color: #555555;
+  margin-top: 0;
+}
+/* line 60, ../sass/omegabob-alpha-default.scss */
+#block-views-front-page-items-all-of-me img,
+#block-views-references-front-reference img {
+  display: block;
+}
 
-/* line 48, ../sass/omegabob-alpha-default.scss */
+/* line 64, ../sass/omegabob-alpha-default.scss */
+#boxes-box-plato {
+  padding: 4em 0 20px 10%;
+}
+/* line 66, ../sass/omegabob-alpha-default.scss */
+#boxes-box-plato p {
+  font-family: Lobster, Georgia, serif;
+  color: #555555;
+  font-size: 30px;
+  text-shadow: none;
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: none;
+  padding: 0 0 0 2em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  border-left: 10px solid #555555;
+}
+
+/* line 80, ../sass/omegabob-alpha-default.scss */
+#block-views-links-badge .badge {
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  background: none;
+}
+
+/* line 86, ../sass/omegabob-alpha-default.scss */
 ul.nav li {
   list-style: none;
   display: inline;
 }
-/* line 50, ../sass/omegabob-alpha-default.scss */
+/* line 88, ../sass/omegabob-alpha-default.scss */
 ul.nav li a {
   text-decoration: none;
   font-family: Abel;
@@ -79,7 +128,7 @@ ul.nav li a {
   margin-left: 2px;
   border-bottom-style: none;
 }
-/* line 65, ../sass/omegabob-alpha-default.scss */
+/* line 103, ../sass/omegabob-alpha-default.scss */
 ul.nav li a:hover {
   color: #333333;
   background-color: whitesmoke;

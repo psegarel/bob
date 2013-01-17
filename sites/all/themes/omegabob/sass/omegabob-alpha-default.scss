@@ -1,21 +1,26 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
 @import 'base';
 
+#zone-preface,
 #zone-user-wrapper	{	padding-top: 20px;
 					}
 
 #zone-branding-wrapper	{	
-						}					
-
-#region-user-first	{	margin-bottom: 0;
-}
+						}	
 
 #zone-branding-wrapper,
 #region-user-second	{	.region-inner	{	float: right;
 										}
-					}
+					}				
 
-h1.site-name a	{	font-size: $title_size;
+#region-user-first	{	margin-bottom: 0;
+}
+
+#region-postscript-second	{	display: none;
+							}
+
+h1.site-name a,
+h2.site-name a	{	font-size: $title_size;
 					font-weight: normal;
 				}
 
@@ -40,10 +45,43 @@ h6.site-slogan	{	margin-top: 32px;
 								text-transform: uppercase;
 							}	
 								
+#block-views-front-page-items-all-of-me,
 #block-views-references-front-reference	{	font-family: Abel; 
-											font-size: $lead; 
+											font-size: 1.4em; 
 											line-height: 120%; 
+											
+											h3	{ 	font-family: Abel; 
+													font-weight: bold;
+													font-size: 2em;
+													color: $dark_grey;
+													margin-top: 0;
+											}
+											
+											img	{	display: block;
+												}
 										}
+
+#boxes-box-plato	{		padding: 4em 0 20px 10%;
+
+							p {	font-family: Lobster, Georgia , serif; 
+								color: $dark_grey; 
+								font-size: 30px; 
+								text-shadow: none; 
+								line-height: 110%; 
+								letter-spacing: 1px; 
+								text-transform: none;
+								padding: 0 0 0 2em;
+								margin-top: 1em;
+								margin-bottom: 3em;
+								border-left: 10px solid $dark_grey;
+							}
+					}
+
+#block-views-links-badge .badge	{	text-align: left;
+									width: 100%;
+									padding: 0;
+									background: none;
+								}
 
 ul.nav	{	li	{	list-style: none;
 					display: inline;

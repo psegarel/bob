@@ -17,3 +17,10 @@ h6.site-slogan	{	font-size: $slogan_size/$ratio;
 #boxes-box-robert_brusen	{	font-size: $subtitle_size * 1.2/$ratio;
 								text-transform: uppercase;
 							}
+
+/* Videos don't scale so hide the three videos row */							
+#region-postscript-first	{	display: none;
+							}
+
+#region-postscript-second	{	display: block;
+							}
