@@ -166,15 +166,18 @@ body	{	background-image: url('/sites/default/files/images/background/subtle_grun
 
 body.page-gallery	{	background: $darkest;
 						#zone-user-wrapper	{	background: $darkest;
+												border-bottom: 1px solid $medium_grey;
 											}
+											
 						h2.site-name a	{	color: #fff;
 										}
 										
 						#block-boxes-robert-brusen	{	color: #fff;
-							}
+													}
 						#zone-header,
 						#zone-footer-wrapper	{	border: none;
-										}	
+												}
+												
 						#block-views-gallery-masonry-gallery	{	h4	{	background: $medium_grey;
 																			padding: 10px 0 0 10px;
 																			margin-bottom: -3px;
