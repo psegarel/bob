@@ -2,93 +2,92 @@
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 @import 'base';
 
-body	{	background-image: url('/sites/default/files/images/whitey.png'); 
-			background-repeat: repeat repeat;
-			font-family: Abel;
+
+/*------------------------------ TYPOGRAPHY ------------------------------------------------------------*/
+body	{	font-family: 'PT Sans Narrow', sans-serif;
+			font-size: $lead * .8;
 		}
 
-
-#zone-preface-wrapper	{	margin-bottom: 6em;
+h2 , h3 , h4 , h5 , h6	{	@include title_family;
 						}
-						
-#zone-content-wrapper	{	background: url('/sites/default/files/images/pw_maze_black.png'); 
-							background-color: $darkest;
-							background-repeat: repeat;
-							padding: 3em 0;
-							margin: 2em 0;
-							color: #fff;
-							font-size: 1.2em;
-							
-							h2	{	font-family: Abel, 'Arial Narrow', sans-serif;
-									padding-top: 2em;
-								}
-						}
-
-
-#zone-footer-wrapper	{	background: url('/sites/default/files/images/pw_maze_black.png');
-							background-color: $darkest;
-							background-repeat: repeat;
-							border-top: 10px solid $light_grey;
-							color: #fff;
-							padding: 4em 0 8em 0;
-							margin-top: 4em;
-							
-							h2 , h3	{	color: #fff;
-										font-size: $lead;
-										margin-bottom: 10px;
-									}
-							
-							a 	{ 	color: $link1;
-									text-decoration: none;
-									margin-left: 10px;
-									&:hover	{	text-decoration: underline;
-											}
-								}	
-						}
-
-#region-postscript-first	{	display: block;
-							}
-
-#region-postscript-second	{	display: none;
-							}						
-
-#zone-postscript-wrapper	{	margin: 2em 0;
-							}
 
 h1.site-name a,
 h2.site-name a	{	font-family: Lobster, Georgia , serif; 
-					color: $darkest; 
+					color: $medium; 
 					text-shadow: none; 
 					line-height: 80%; 
 					letter-spacing: 1px; 
 					text-transform: none;
+				}			
+		
+#zone-user-wrapper	{	color: #fff;
+					}	
+
+#zone-content-wrapper	{	color: #fff;
+							font-size: 1.2em;
+						}
+						
+#zone-footer-wrapper	{	color: #fff;
+							font-size: $lead * .8;
+
+							h2 , h3	{	color: $brighter;
+										font-size: $lead;
+										text-transform: uppercase;
+										border-bottom: 1px dotted $brighter;
+									}
+							
+							a 	{ 	color: $light;
+								}	
+}
+
+h2.block-title	{	font-size: $lead*1.5;
+					color: $darkest;
 				}
 
-h2 , h3 , h4 , h5 , h6	{	font-family: Cuprum , 'Arial Narrow' , sans-serif;
-						}				
-
-h2.block-title	{	font-family: Cuprum , 'Arial Narrow' , sans-serif;
-					font-size: $lead*1.5;
-					color: $medium_grey;
-				}
 
 h6.site-slogan,
 #block-boxes-subtitle p,
-#boxes-box-robert_brusen		{	font-family: Cuprum; 
-									color: $medium_grey;
+#block-views-news-front-news h2		{	color: $light;
+										text-transform: none;
+									}
+
+
+.smalltext		{	p 	{ font-size: $lead * .9;
+						}
+				}
+
+
+.faded			{	p 	{ color: #777;
+						}
+				}
+								
+#block-boxes-robert-brusen	{	/* color: $bright; */
+							}
+							
+#block-boxes-subtitle p			{	color: #fff;
+									text-transform: none;
 								}
 
-h6.site-slogan					{	color: $dark_grey;
+#block-views-pages-awards  {	margin-top: 20px;
+								margin-left: -12px;
+
+								p 	{	font-size: $lead * .9;
+										text-align: right;
+										/* border-right: 1px dotted $bright; */
+										border-top: 1px dotted $medium;
+										/* padding-right: 10px; */
+										padding-top: 10px;
+										color: $medium;
+									}
+							}
+.article						{	font-size: $lead;
 								}
-
-
-
 	
 .more							{	font-family: 'Century Gothic' , sans-serif;
 									font-size: 11px;
 									text-transform: uppercase;
 									
-									a 	{ 	color: $link1;
+									a 	{ 	color: $light;
 											text-decoration: none;
 											
 											&:hover {	text-decoration: underline;
@@ -96,19 +95,25 @@ h6.site-slogan					{	color: $dark_grey;
 										}
 								}
 
-#block-boxes-subtitle p,
-#boxes-box-robert_brusen		{	color: $medium_grey;
-								}
-								
+#block-views-footer-get-in-touch	{	h4	{	padding-top: 4px;
+												margin: 0;
+											}
+										.dotted-top	{	border-bottom: 1px dotted $brighter;
+														padding-top: 8px;
+														margin-bottom: 10px;
+													}	
+											
+										img	{	margin-bottom: 40px;
+											}	
+									}								
+
 #block-views-front-page-items-all-of-me,
-#block-views-references-front-reference	{	font-family: Abel; 
-											font-size: 1.4em; 
+#block-views-references-front-reference	{	font-size: $lead;
 											line-height: 120%; 
 											
-											h3	{ 	font-family: Abel; 
-													font-weight: bold;
+											h3	{ 	font-weight: bold;
 													font-size: 2em;
-													color: $dark_grey;
+													color: $darkest;
 													margin-top: 20px;
 											}
 											
@@ -116,75 +121,288 @@ h6.site-slogan					{	color: $dark_grey;
 												}
 										}
 
+#block-views-pages-about-block	{	.adaptive-image	{	margin-bottom: 20px;
+													}
+								}
+								
+#boxes-box-plato	{		padding: 0 0 20px 0;
+							margin-bottom: 80px;
+
+							p {	font-family: Lobster, Georgia , serif; 
+								font-size: 20px; 
+								text-shadow: none; 
+								line-height: 110%; 
+								text-transform: none;
+								padding: 0 0 0 20px;
+								margin: 2em 0;
+								color: $medium; 
+								border-left: 10px solid $medium;
+							}
+					}
+#block-views-news-front-news	{	h2.block-title	{	color: $medium;
+														position: absolute;
+														top: -42%;
+														left: 33%;
+														text-transform: uppercase;
+														font-size: 70px;
+														font-family: 'Lobster' , sans-serif;
+														font-weight: bold;
+													}
+													
+									h3				{	border-bottom: 1px dotted $bright;
+														padding: 16px 0 6px 0;
+														color: $bright;
+													}					
+								}
+
+/*------------------------------ END TYPOGRAPHY ------------------------------------------------------------*/
+
+
+		
+body	{	background-image: url('/sites/default/files/images/background/subtle_grunge.png'); 
+			background-repeat: repeat repeat;
+		}
+
+
+body.page-gallery	{	background: $darkest;
+						#zone-user-wrapper	{	background: $darkest;
+											}
+						h2.site-name a	{	color: #fff;
+										}
+										
+						#block-boxes-robert-brusen	{	color: #fff;
+							}
+						#zone-header,
+						#zone-footer-wrapper	{	border: none;
+										}	
+						#block-views-gallery-masonry-gallery	{	h4	{	background: $medium_grey;
+																			padding: 10px 0 0 10px;
+																			margin-bottom: -3px;
+																		}
+																}								
+					}
+
+					
+#zone-header			{	border-top: 1px dotted $bright;
+							border-bottom: 1px dotted $bright;
+							padding: 40px 0;
+						}
+						
+#zone-menu-wrapper		{	margin: 2em 0 0 0;
+						}
+
+
+#zone-user-wrapper		{	margin-bottom: 2em;
+							background: $headerColor;
+							/* border-bottom: 6px solid $brighter; */
+							/* @include single-box-shadow(#aaa, 2px , 4px , 20px); */
+						}
+
+
+#zone-header-wrapper,
+#zone-preface-wrapper	{	margin-top: 4em;
+							margin-bottom: 6em;
+						}
+
+
+#zone-postscript-wrapper	{	padding: 4em 0;
+								background-color: $medium;
+							}
+						
+#zone-content-wrapper	{	/* @include background_dark_pattern;  */
+							background-color: $medium;							
+							padding: 2em 0;
+						}
+
+
+.context-news #zone-content-wrapper	{	background: transparent;
+										color: $darkest;
+									}
+
+#zone-footer-wrapper	{	@include background_dark_pattern;
+							background-color: $darkest;
+							border-top: 10px solid $medium;
+							padding: 4em 0 8em 0;
+							
+							h2 , h3	{	margin-bottom: 10px;
+									}
+							
+							a 	{ 	text-decoration: none;
+									margin-left: 10px;
+									&:hover	{	text-decoration: underline;
+											}
+								}	
+						}
+
+#zone-branding			{	/*
+background-image: url('/sites/default/files/images/piano.png'); 
+							background-repeat: no-repeat;
+							background-position-x: 100%;
+*/
+						}
+						
+#region-postscript-first	{	display: block;
+							}
+
+#region-postscript-second	{	display: none;
+							}	
+
+
+#block-system-main-menu		{	margin-top: 32px;
+							}
+
+
+#block-views-pages-awards	{	background: transparent;
+								color: #fff;
+								
+								h2.block-title	{ 	font-family: 'Lobster' , serif;
+													font-size: 40px;
+													color: $medium;
+													float: right;
+													margin-right: 20px;
+												}
+							}
+							
 #block-views-links-badge .badge	{	text-align: center;
 									width: 90%;
 									padding: 1em;
 									background: $darkest;
 								}
 
-#boxes-box-plato	{		padding: 2em 0 20px 0;
 
-							p {	font-family: Lobster, Georgia , serif; 
-								color: $dark_grey; 
-								font-size: 20px; 
-								text-shadow: none; 
-								line-height: 110%; 
-								letter-spacing: 1px; 
-								text-transform: none;
-								padding: 0 0 0 20px;
-								margin-top: 1em;
-								margin-bottom: 3em;
-								border-left: 10px solid $dark_grey;
+
+#block-views-pages-block-2	{	background: #fafafa;
+								border: 1px solid #ccc;
+								padding-left: 20px;
+								
+								h2 	{	padding: 2em 0 0 10px;
+									}
 							}
-					}
 
+#block-views-gallery-masonry-gallery .view-content {	margin: 10px;
+														color: #fff;
+														
+														h4	{	margin: 10px 0 2px 0;
+															}
+
+														.item	{	float: left;
+																	width: 350px;
+																	padding: 12px 14px;
+																	background: $darkest;
+																	margin: 0;
+																}		
+}
+
+#block-views-gallery-front-videos	{		h4 {	margin: 0 0 2px 0;
+													color: $brighter;
+													border-top: 1px dotted $bright;
+													padding-top: 20px;
+													width: 92%;
+											}
+									}
+									
 .italic	{	font-style: italic;
 		}
+		
+.selected	{	border-bottom: 3px solid $darkest;			
+			}
 
-ul.nav	{	li	{	list-style: none;
+ul.menu	{	li	{	list-style: none;
 					display: inline;
+					
 					a 	{	text-decoration: none;
-							font-family: Abel; 
 							font-size: 18px; 
-							text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px; 
 							line-height: 26px;
 							padding: 7px 18px; 
-							border-top-left-radius: 16px; 
-							border-top-right-radius: 16px; 
-							border-bottom-right-radius: 16px; 
-							border-bottom-left-radius: 16px; 
-							color: rgb(51, 51, 51); 
+							color: #fff;
 							margin-right: 2px; 
 							margin-left: 2px; 
 							border-bottom-style: none;
+							border-right: 1px solid $headerColor;
+							border-left: 1px solid $headerColor;
 						}
-					a:hover {	color: rgb(51, 51, 51); 
-								background-color: rgb(245, 245, 245); 
-								border-bottom-style: none;
-								-webkit-transition: ease-in-out .2s;
-								-moz-transition: ease-in-out .2s;
-								-o-transition: ease-in-out .2s;
-								-ms-transition: ease-in-out .2s; 
-								transition: ease-in-out .2s;
-							}
-				}
-		}
-
-.tile	{	background: none;
-			width: 98%;
-			border: none;
-			padding: 10px 0 20px 0;
-			
-			h4	{	font-family: 'Cuprum' , 'Abel' , 'Arial Narrow' , sans-serif;
-					text-decoration: none;
-					color: $medium_grey;
-					margin: 20px 0 2px 10px;
-					letter-spacing: -.1em;
+					a:hover,
+					a.active	{	border-right: 1px solid $brighter;
+									border-left: 1px solid $brighter;
+									color: $brighter;
+								}	
 				}
 		}
 
 
+/* JQUERY TOOLS _ SCROLLABLE */
 
+/*
+root element for the scrollable.  when scrolling occurs this
+element stays still.
+*/
+.scrollable {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  width: 570px;
+  height: 450px;
+}
+ 
+/*
+root element for scrollable items. Must be absolutely positioned
+and it should have a extremely large width to accommodate scrollable
+items.  it's enough that you set width and height for the root element
+and not for this element.
+*/
+.scrollable .items {
+  /* this cannot be too large */
+  width:20000em;
+  position:absolute;
+}
+ 
+/*
+a single item. must be floated in horizontal scrolling.  typically,
+this element is the one that *you* will style the most.
+*/
+.items div {
+  float:left;
+}
+
+
+/* JQUERY TOOLS _ OVERLAY */
+/* the overlayed element */
+.simple_overlay {
+ 
+ 	background-image: url('/sites/default/files/images/background/subtle_grunge.png'); 
+	background-repeat: repeat repeat;
+	padding: 2em;
+	font-size: $lead;
+	
+    /* must be initially hidden */
+    display:none;
+ 
+    /* place overlay on top of other elements */
+    z-index:10000;
+ 
+    /* styling */
+    background-color:#fff;
+    color: $darkest;
+ 
+    width:675px;
+    min-height:200px;
+    border:1px solid #666;
+ 
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+ 
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+    background-image:url(/sites/all/themes/omegabob/images/close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
 
 
 

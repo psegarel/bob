@@ -6,9 +6,31 @@ $slogan_size: 38px;
 $subtitle_size: 18px;
 $lead: 20px;
 
-$darkest: #121212;
+/* $darkest: #373534; */
+$darkest: #363636;
 $dark_grey: #555555;
 $medium_grey: #777777;
 $light_grey: #777777;
+$light: #fff;
+
+$brighter: #D5CED6;
+$bright: #87778a;
+$medium : #3B2F3D;
+$complement: #808A77;
+
+$headerColor: $medium;
 
 $link1: #a99200;
+
+@mixin title_family	{ 	font-family: 'PT Sans Narrow', /* 'Cabin Condensed' ,'Abel' , 'Cuprum' , */ 'Arial Narrow' , sans-serif;
+						font-weight: normal;
+					}
+
+@mixin background_dark	{	background: $darkest;
+						}
+						
+@mixin background_dark_pattern						{	background: url('/sites/default/files/images/background/pw_maze_black.png'); 
+														background-repeat: repeat;
+													}	
+															
+									
