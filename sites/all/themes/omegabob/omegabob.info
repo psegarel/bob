@@ -12,8 +12,9 @@ scripts[] = js/masonry/masonry.min.js
 scripts[] = js/omegabob.js
 
 ; Icons
-stylesheets[all][] = css/fonts/foundation-icons-general/stylesheets/foundation-icons-general.css
-stylesheets[all][] = css/fonts/foundation-icons-social/stylesheets/foundation-icons-general.css
+stylesheets[all][] = css/font-awesome.min.css
+;stylesheets[all][] = css/fonts/foundation-icons-general/stylesheets/foundation-icons-general.css
+;stylesheets[all][] = css/fonts/foundation-icons-social/stylesheets/foundation-icons-general.css
 ;---------------------------------------------------------------------------------------------------
 
 regions[page_top] = 'Page Top'

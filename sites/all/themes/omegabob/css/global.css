@@ -202,55 +202,63 @@ h6.site-slogan,
   color: #87778a;
 }
 
+/* line 160, ../sass/global.scss */
+.icon-facebook-sign,
+.icon-twitter,
+.icon-envelope,
+.icon-phone {
+  margin-right: 10px;
+}
+
 /*------------------------------ END TYPOGRAPHY ------------------------------------------------------------*/
-/* line 162, ../sass/global.scss */
+/* line 168, ../sass/global.scss */
 body {
   background-image: url("/sites/default/files/images/background/subtle_grunge.png");
   background-repeat: repeat repeat;
 }
 
-/* line 167, ../sass/global.scss */
+/* line 173, ../sass/global.scss */
 body.page-gallery {
   background: #363636;
 }
-/* line 168, ../sass/global.scss */
+/* line 174, ../sass/global.scss */
 body.page-gallery #zone-user-wrapper {
   background: #363636;
   border-bottom: 1px solid #777777;
 }
-/* line 172, ../sass/global.scss */
+/* line 178, ../sass/global.scss */
 body.page-gallery h2.site-name a {
   color: #fff;
 }
-/* line 175, ../sass/global.scss */
+/* line 181, ../sass/global.scss */
 body.page-gallery #block-boxes-robert-brusen {
   color: #fff;
 }
-/* line 178, ../sass/global.scss */
+/* line 184, ../sass/global.scss */
 body.page-gallery #zone-header,
 body.page-gallery #zone-footer-wrapper {
   border: none;
 }
-/* line 181, ../sass/global.scss */
+/* line 187, ../sass/global.scss */
 body.page-gallery #block-views-gallery-masonry-gallery h4 {
   background: #777777;
   padding: 10px 0 0 10px;
   margin-bottom: -3px;
 }
 
-/* line 189, ../sass/global.scss */
+/* line 195, ../sass/global.scss */
 #zone-header {
   border-top: 1px dotted #87778a;
   border-bottom: 1px dotted #87778a;
   padding: 40px 0;
 }
 
-/* line 194, ../sass/global.scss */
+/* line 200, ../sass/global.scss */
 #zone-menu-wrapper {
   margin: 2em 0 0 0;
 }
 
-/* line 198, ../sass/global.scss */
+/* line 204, ../sass/global.scss */
 #zone-user-wrapper {
   margin-bottom: 2em;
   background: #3b2f3d;
@@ -258,33 +266,33 @@ body.page-gallery #block-views-gallery-masonry-gallery h4 {
   /* @include single-box-shadow(#aaa, 2px , 4px , 20px); */
 }
 
-/* line 206, ../sass/global.scss */
+/* line 212, ../sass/global.scss */
 #zone-header-wrapper,
 #zone-preface-wrapper {
   margin-top: 4em;
   margin-bottom: 6em;
 }
 
-/* line 211, ../sass/global.scss */
+/* line 217, ../sass/global.scss */
 #zone-postscript-wrapper {
   padding: 4em 0;
   background-color: #3b2f3d;
 }
 
-/* line 215, ../sass/global.scss */
+/* line 221, ../sass/global.scss */
 #zone-content-wrapper {
   /* @include background_dark_pattern;  */
   background-color: #3b2f3d;
   padding: 2em 0;
 }
 
-/* line 221, ../sass/global.scss */
+/* line 227, ../sass/global.scss */
 .context-news #zone-content-wrapper {
   background: transparent;
   color: #363636;
 }
 
-/* line 225, ../sass/global.scss */
+/* line 231, ../sass/global.scss */
 #zone-footer-wrapper {
   background: url("/sites/default/files/images/background/pw_maze_black.png");
   background-repeat: repeat;
@@ -292,21 +300,21 @@ body.page-gallery #block-views-gallery-masonry-gallery h4 {
   border-top: 10px solid #3b2f3d;
   padding: 4em 0 8em 0;
 }
-/* line 230, ../sass/global.scss */
+/* line 236, ../sass/global.scss */
 #zone-footer-wrapper h2, #zone-footer-wrapper h3 {
   margin-bottom: 10px;
 }
-/* line 233, ../sass/global.scss */
+/* line 239, ../sass/global.scss */
 #zone-footer-wrapper a {
   text-decoration: none;
   margin-left: 10px;
 }
-/* line 235, ../sass/global.scss */
+/* line 241, ../sass/global.scss */
 #zone-footer-wrapper a:hover {
   text-decoration: underline;
 }
 
-/* line 240, ../sass/global.scss */
+/* line 246, ../sass/global.scss */
 #zone-branding {
               			 	/*
 background-image: url('/sites/default/files/images/piano.png'); 
@@ -315,27 +323,27 @@ background-image: url('/sites/default/files/images/piano.png');
 */
 }
 
-/* line 247, ../sass/global.scss */
+/* line 253, ../sass/global.scss */
 #region-postscript-first {
   display: block;
 }
 
-/* line 250, ../sass/global.scss */
+/* line 256, ../sass/global.scss */
 #region-postscript-second {
   display: none;
 }
 
-/* line 254, ../sass/global.scss */
+/* line 260, ../sass/global.scss */
 #block-system-main-menu {
   margin-top: 32px;
 }
 
-/* line 258, ../sass/global.scss */
+/* line 264, ../sass/global.scss */
 #block-views-pages-awards {
   background: transparent;
   color: #fff;
 }
-/* line 261, ../sass/global.scss */
+/* line 267, ../sass/global.scss */
 #block-views-pages-awards h2.block-title {
   font-family: "Lobster", serif;
   font-size: 40px;
@@ -344,7 +352,7 @@ background-image: url('/sites/default/files/images/piano.png');
   margin-right: 20px;
 }
 
-/* line 269, ../sass/global.scss */
+/* line 275, ../sass/global.scss */
 #block-views-links-badge .badge {
   text-align: center;
   width: 90%;
@@ -352,27 +360,27 @@ background-image: url('/sites/default/files/images/piano.png');
   background: #363636;
 }
 
-/* line 277, ../sass/global.scss */
+/* line 283, ../sass/global.scss */
 #block-views-pages-block-2 {
   background: #fafafa;
   border: 1px solid #cccccc;
   padding-left: 20px;
 }
-/* line 281, ../sass/global.scss */
+/* line 287, ../sass/global.scss */
 #block-views-pages-block-2 h2 {
   padding: 2em 0 0 10px;
 }
 
-/* line 285, ../sass/global.scss */
+/* line 291, ../sass/global.scss */
 #block-views-gallery-masonry-gallery .view-content {
   margin: 10px;
   color: #fff;
 }
-/* line 288, ../sass/global.scss */
+/* line 294, ../sass/global.scss */
 #block-views-gallery-masonry-gallery .view-content h4 {
   margin: 10px 0 2px 0;
 }
-/* line 291, ../sass/global.scss */
+/* line 297, ../sass/global.scss */
 #block-views-gallery-masonry-gallery .view-content .item {
   float: left;
   width: 350px;
@@ -381,7 +389,7 @@ background-image: url('/sites/default/files/images/piano.png');
   margin: 0;
 }
 
-/* line 299, ../sass/global.scss */
+/* line 305, ../sass/global.scss */
 #block-views-gallery-front-videos h4 {
   margin: 0 0 2px 0;
   color: #d5ced6;
@@ -390,22 +398,22 @@ background-image: url('/sites/default/files/images/piano.png');
   width: 92%;
 }
 
-/* line 307, ../sass/global.scss */
+/* line 313, ../sass/global.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 310, ../sass/global.scss */
+/* line 316, ../sass/global.scss */
 .selected {
   border-bottom: 3px solid #363636;
 }
 
-/* line 313, ../sass/global.scss */
+/* line 319, ../sass/global.scss */
 ul.menu li {
   list-style: none;
   display: inline;
 }
-/* line 316, ../sass/global.scss */
+/* line 322, ../sass/global.scss */
 ul.menu li a {
   text-decoration: none;
   font-size: 18px;
@@ -418,7 +426,7 @@ ul.menu li a {
   border-right: 1px solid #3b2f3d;
   border-left: 1px solid #3b2f3d;
 }
-/* line 328, ../sass/global.scss */
+/* line 334, ../sass/global.scss */
 ul.menu li a:hover,
 ul.menu li a.active {
   border-right: 1px solid #d5ced6;
@@ -431,7 +439,7 @@ ul.menu li a.active {
 root element for the scrollable.  when scrolling occurs this
 element stays still.
 */
-/* line 342, ../sass/global.scss */
+/* line 348, ../sass/global.scss */
 .scrollable {
   /* required settings */
   position: relative;
@@ -446,7 +454,7 @@ and it should have a extremely large width to accommodate scrollable
 items.  it's enough that you set width and height for the root element
 and not for this element.
 */
-/* line 356, ../sass/global.scss */
+/* line 362, ../sass/global.scss */
 .scrollable .items {
   /* this cannot be too large */
   width: 20000em;
@@ -457,14 +465,14 @@ and not for this element.
 a single item. must be floated in horizontal scrolling.  typically,
 this element is the one that *you* will style the most.
 */
-/* line 366, ../sass/global.scss */
+/* line 372, ../sass/global.scss */
 .items div {
   float: left;
 }
 
 /* JQUERY TOOLS _ OVERLAY */
 /* the overlayed element */
-/* line 373, ../sass/global.scss */
+/* line 379, ../sass/global.scss */
 .simple_overlay {
   background-image: url("/sites/default/files/images/background/subtle_grunge.png");
   background-repeat: repeat repeat;
@@ -486,7 +494,7 @@ this element is the one that *you* will style the most.
 }
 
 /* close button positioned on upper right corner */
-/* line 400, ../sass/global.scss */
+/* line 406, ../sass/global.scss */
 .simple_overlay .close {
   background-image: url(/sites/all/themes/omegabob/images/close.png);
   position: absolute;

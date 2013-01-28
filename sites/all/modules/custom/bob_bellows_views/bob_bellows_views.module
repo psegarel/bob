@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Bob Bellows Views feature.
+ */
+
+include_once 'bob_bellows_views.features.inc';
