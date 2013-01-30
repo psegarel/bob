@@ -4,161 +4,168 @@
 
 
 /*------------------------------ TYPOGRAPHY ------------------------------------------------------------*/
-body	{	font-family: 'PT Sans Narrow', sans-serif;
-			font-size: $lead * .8;
-		}
+body												{	font-family: 'PT Sans Narrow', sans-serif;
+														font-size: $lead * .8;
+													}
 
-h2 , h3 , h4 , h5 , h6	{	@include title_family;
-						}
+h2 , h3 , h4 , h5 , h6								{	@include title_family;
+													}
 
 h1.site-name a,
-h2.site-name a	{	font-family: Lobster, Georgia , serif; 
-					color: $medium; 
-					text-shadow: none; 
-					line-height: 80%; 
-					letter-spacing: 1px; 
-					text-transform: none;
-				}			
+h2.site-name a										{	font-family: Lobster, Georgia , serif; 
+														color: $medium; 
+														text-shadow: none; 
+														line-height: 80%; 
+														letter-spacing: 1px; 
+														text-transform: none;
+														padding-right: 4em;
+													}			
 		
-#zone-user-wrapper	{	color: #fff;
-					}	
-
-#zone-content-wrapper	{	color: #fff;
-							font-size: 1.2em;
-						}
-						
-#zone-footer-wrapper	{	color: #fff;
-							font-size: $lead * .8;
-
-							h2 , h3	{	color: $brighter;
-										font-size: $lead;
-										text-transform: uppercase;
-										border-bottom: 1px dotted $brighter;
-									}
-							
-							a 	{ 	color: $light;
-								}	
-}
-
-h2.block-title	{	font-size: $lead*1.5;
-					color: $darkest;
-				}
-
-
-h6.site-slogan,
-#block-boxes-subtitle p,
-#block-views-news-front-news h2		{	color: $light;
-										text-transform: none;
-									}
-
-
-.smalltext		{	p 	{ font-size: $lead * .9;
-						}
-				}
-
-
-.faded			{	p 	{ color: #777;
-						}
-				}
-								
-#block-boxes-robert-brusen	{	/* color: $bright; */
-							}
-							
-#block-boxes-subtitle p			{	color: #fff;
-									text-transform: none;
-								}
-
-#block-views-pages-awards  {	margin-top: 20px;
-								margin-left: -12px;
-
-								p 	{	font-size: $lead * .9;
-										text-align: right;
-										/* border-right: 1px dotted $bright; */
-										border-top: 1px dotted $medium;
-										/* padding-right: 10px; */
-										padding-top: 10px;
-										color: $medium;
-									}
-							}
-.article						{	font-size: $lead;
-								}
-	
-.more							{	font-family: 'Century Gothic' , sans-serif;
-									font-size: 11px;
-									text-transform: uppercase;
-									
-									a 	{ 	color: $light;
-											text-decoration: none;
-											
-											&:hover {	text-decoration: underline;
-													}
-										}
-								}
-
-#block-views-footer-get-in-touch	{	h4	{	padding-top: 4px;
-												margin: 0;
-											}
-										.dotted-top	{	border-bottom: 1px dotted $brighter;
-														padding-top: 8px;
-														margin-bottom: 10px;
+#zone-user-wrapper,
+#zone-content-wrapper,
+#zone-footer-wrapper								{	color: #fff;
 													}	
-											
-										img	{	margin-bottom: 40px;
-											}	
-									}								
 
-#block-views-front-page-items-all-of-me,
-#block-views-references-front-reference	{	font-size: $lead;
-											line-height: 120%; 
-											
-											h3	{ 	font-weight: bold;
-													font-size: 2em;
-													color: $darkest;
-													margin-top: 20px;
-											}
-											
-											img	{	display: none;
-												}
-										}
-
-#block-views-pages-about-block	{	.adaptive-image	{	margin-bottom: 20px;
+#zone-content-wrapper								{	font-size: 1.2em;
 													}
-								}
-								
-#boxes-box-plato	{		padding: 0 0 20px 0;
-							margin-bottom: 80px;
+						
+#zone-footer-wrapper								{	font-size: $lead * .8;
 
-							p {	font-family: Lobster, Georgia , serif; 
-								font-size: 20px; 
-								text-shadow: none; 
-								line-height: 110%; 
-								text-transform: none;
-								padding: 0 0 0 20px;
-								margin: 2em 0;
-								color: $medium; 
-								border-left: 10px solid $medium;
-							}
-					}
-#block-views-news-front-news	{	h2.block-title	{	color: $medium;
-														position: absolute;
-														top: -42%;
-														left: 33%;
-														text-transform: uppercase;
-														font-size: 70px;
-														font-family: 'Lobster' , sans-serif;
-														font-weight: bold;
+														h2 , h3	{	color: $brighter;
+																	font-size: $lead;
+																	text-transform: uppercase;
+																	border-bottom: 1px dotted $brighter;
+																}
+														
+														a 	{ 	color: $light;
+															}	
+													}
+
+h2.block-title										{	font-size: $lead*1.5;
+														color: $darkest;
 													}
 													
-									h3				{	border-bottom: 1px dotted $bright;
-														padding: 16px 0 6px 0;
-														color: $bright;
-													}					
-								}
-	.icon-facebook-sign,
-	.icon-twitter,
-	.icon-envelope,
-	.icon-phone	{	margin-right: 10px;
-					}
+h6.site-slogan										{	color: $light;
+														text-transform: none;
+													}
+													
+.sassy												{	@include sassy-button('shiny', 10px , 12px, $bright);
+														a 	{ 	text-decoration: none;
+																color: white;
+															}
+													}
+
+#boxes-box-subtitle 								{	.boxes-box-content  	{  p 	{ color: $brighter;
+																						}
+																				}
+													}
+
+
+.smalltext											{	p 	{ font-size: $lead * .9;
+															}
+													}
+
+.faded												{	p 	{ color: #777;
+															}
+													}
+							
+#block-boxes-subtitle p								{	color: #fff;
+														text-transform: none;
+													}
+
+.article											{	font-size: $lead;
+													}
+	
+.more												{	font-family: 'Century Gothic' , sans-serif;
+														font-size: 11px;
+														text-transform: uppercase;
+														
+														a 	{ 	color: $light;
+																text-decoration: none;
+																
+																&:hover {	text-decoration: underline;
+																		}
+															}
+													}
+
+#block-views-footer-get-in-touch					{	h4	{	padding-top: 4px;
+																margin: 0;
+																line-height: 1;
+																color: $brighter;
+																padding-bottom: 10px;
+															}
+															
+														.dotted-top	{	border-bottom: 1px dotted $brighter;
+																		padding-top: 8px;
+																		margin-bottom: 10px;
+																	}	
+															
+														img	{	margin-bottom: 40px;
+															}	
+													}								
+
+#block-views-front-page-items-all-of-me,
+#block-views-references-front-reference				{	font-size: $lead;
+														line-height: 120%; 
+														
+														h3	{ 	font-weight: bold;
+																font-size: 2em;
+																color: $darkest;
+																margin-top: 20px;
+														}
+														
+														img	{	display: none;
+															}
+													}
+
+#block-views-footer-social-networks					{	margin-bottom: 2em;
+													}
+													
+#block-views-pages-about-block						{	.adaptive-image	{	margin-bottom: 20px;
+																		}
+													}
+								
+#block-views-quote-frontpage-quote 					{ 	padding: 0 0 20px 0;
+														margin-bottom: 80px;
+		
+														.quote-body p,
+														.quote-author {		font-family: Lobster, Georgia , serif; 
+																			font-size: $lead * 2.4; 
+																			line-height: 120%;
+																		}
+		
+														.quote-body p 	{	margin: 2em 0 0 2em; 
+																			color: $medium;
+																		}
+		
+														.quote-author 	{	padding: 0;
+																			margin: 0; 
+																			color: $darkest;
+																			margin: 1em 0 0 2em;
+																		}
+													}
+													
+#block-views-news-front-news						{	h2.block-title	{	color: $medium;
+																			position: absolute;
+																			top: -42%;
+																			left: 33%;
+																			text-transform: uppercase;
+																			font-size: 70px;
+																			font-family: 'Lobster' , sans-serif;
+																			font-weight: bold;
+																		}
+																		
+														h3				{	border-bottom: 1px dotted $bright;
+																			padding: 16px 0 6px 0;
+																			color: $brighter;
+																		}					
+													}
+													
+.icon-facebook-sign,
+.icon-twitter,
+.icon-envelope,
+.icon-phone											{	margin-right: 10px;
+													}
 
 
 /*------------------------------ END TYPOGRAPHY ------------------------------------------------------------*/
@@ -184,33 +191,34 @@ body.page-gallery	{	background: $darkest;
 						#zone-footer-wrapper	{	border: none;
 												}
 												
-						#block-views-gallery-masonry-gallery	{	h4	{	background: $medium_grey;
+						#block-views-gallery-masonry-gallery	{	h4	{	background: $dark_grey;
 																			padding: 10px 0 0 10px;
 																			margin-bottom: -3px;
 																		}
 																}								
 					}
 
+#zone-branding-wrapper	{	margin: 0;
+							padding: 0;
+						}
 					
 #zone-header			{	border-top: 1px dotted $bright;
 							border-bottom: 1px dotted $bright;
-							padding: 40px 0;
+							padding: 20px 0;
 						}
 						
 #zone-menu-wrapper		{	margin: 2em 0 0 0;
 						}
 
 
-#zone-user-wrapper		{	margin-bottom: 2em;
+#zone-user-wrapper		{	margin-bottom: 1em;
 							background: $headerColor;
-							/* border-bottom: 6px solid $brighter; */
-							/* @include single-box-shadow(#aaa, 2px , 4px , 20px); */
 						}
 
 
 #zone-header-wrapper,
-#zone-preface-wrapper	{	margin-top: 4em;
-							margin-bottom: 6em;
+#zone-preface-wrapper	{	margin-top: 0;
+							margin-bottom: 4em;
 						}
 
 
@@ -242,13 +250,6 @@ body.page-gallery	{	background: $darkest;
 											}
 								}	
 						}
-
-#zone-branding			{	/*
-background-image: url('/sites/default/files/images/piano.png'); 
-							background-repeat: no-repeat;
-							background-position-x: 100%;
-*/
-						}
 						
 #region-postscript-first	{	display: block;
 							}
@@ -257,19 +258,28 @@ background-image: url('/sites/default/files/images/piano.png');
 							}	
 
 
-#block-system-main-menu		{	margin-top: 32px;
+#block-boxes-subtitle		{	max-height: 2em;
 							}
 
 
 #block-views-pages-awards	{	background: transparent;
 								color: #fff;
+								position: relative;
 								
 								h2.block-title	{ 	font-family: 'Lobster' , serif;
 													font-size: 40px;
 													color: $medium;
 													float: right;
-													margin-right: 20px;
 												}
+												
+
+								p 	{	font-size: $lead * .9;
+										text-align: right;
+										border-top: 1px dotted $medium;
+										padding-top: 10px;
+										color: $medium;
+										line-height: 1.3;
+									}					
 							}
 							
 #block-views-links-badge .badge	{	text-align: center;

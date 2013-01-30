@@ -18,13 +18,13 @@
 /* line 15, ../sass/omegabob-alpha-default.scss */
 h1.site-name a,
 h2.site-name a {
-  font-size: 120px;
+  font-size: 100px;
   font-weight: normal;
 }
 
 /* line 20, ../sass/omegabob-alpha-default.scss */
 h6.site-slogan {
-  font-size: 38px;
+  font-size: 30px;
 }
 
 /* line 23, ../sass/omegabob-alpha-default.scss */
@@ -64,7 +64,7 @@ h6.site-slogan {
 /* line 48, ../sass/omegabob-alpha-default.scss */
 #boxes-box-plato p {
   font-family: Lobster, Georgia, serif;
-  font-size: 40px;
+  font-size: 36px;
   text-shadow: none;
   line-height: 110%;
   text-transform: none;
