@@ -12,5 +12,5 @@ jQuery(document).ready(function ($)
 	/* Homepage slideshow jQuery Tools */
 	$('#scrollable').scrollable({circular:true}).autoscroll({autoplay:true});
 	
-	$("a.contact[rel]").overlay();
+	$("a.contact-button[rel]").overlay();
 });

@@ -74,6 +74,7 @@ h6.site-slogan										{	color: $light;
 													}
 
 .article											{	font-size: $lead;
+														line-height: 1.2;
 													}
 	
 .more												{	font-family: 'Century Gothic' , sans-serif;
@@ -140,14 +141,16 @@ h6.site-slogan										{	color: $light;
 		
 														.quote-author 	{	padding: 0;
 																			margin: 0; 
-																			color: $darkest;
+																			color: $medium;
 																			margin: 1em 0 0 2em;
 																		}
+														.icon-quote-left 	{	color: $medium;
+																			}				
 													}
 													
 #block-views-news-front-news						{	h2.block-title	{	color: $medium;
 																			position: absolute;
-																			top: -42%;
+																			top: -40%;
 																			left: 33%;
 																			text-transform: uppercase;
 																			font-size: 70px;
@@ -161,6 +164,21 @@ h6.site-slogan										{	color: $light;
 																		}					
 													}
 													
+#block-views-front-page-items-all-of-me				{	margin: 4em 0 0 0;
+														border-top: 1px dotted $bright;
+														/* border-bottom: 1px dotted $bright; */
+														padding: 1em 0;
+														.view-front-page-items  { 	h3	{ 	color: #fff;
+																							font-weight: normal;
+																							font-size: 1.2em; 
+																						}
+																						
+																					p 	{ 	color: #fff;
+																							line-height: 1.3;
+																						}			
+																				}
+													}
+													
 .icon-facebook-sign,
 .icon-twitter,
 .icon-envelope,
@@ -168,6 +186,17 @@ h6.site-slogan										{	color: $light;
 													}
 
 
+
+ul.subtitle		{	list-style: none;
+					padding: 0 0 10px 0;
+					margin: 0;
+					
+					li	{	display: inline;
+							float: left;
+							padding: 0 28px 0 0;
+							font-size: 1.2em;
+						}
+				}
 /*------------------------------ END TYPOGRAPHY ------------------------------------------------------------*/
 
 
@@ -198,8 +227,12 @@ body.page-gallery	{	background: $darkest;
 																}								
 					}
 
-#zone-branding-wrapper	{	margin: 0;
+#zone-branding-wrapper	{	margin: 6em 0 0 0;
 							padding: 0;
+						}
+
+
+#zone-header-wrapper	{	margin: 0 0 2em 0;
 						}
 					
 #zone-header			{	border-top: 1px dotted $bright;
@@ -216,7 +249,6 @@ body.page-gallery	{	background: $darkest;
 						}
 
 
-#zone-header-wrapper,
 #zone-preface-wrapper	{	margin-top: 0;
 							margin-bottom: 4em;
 						}
@@ -257,12 +289,30 @@ body.page-gallery	{	background: $darkest;
 #region-postscript-second	{	display: none;
 							}	
 
-
+#region-user-second			{	position: relative;
+								.region-user-second-inner	{	position: relative;
+															}	
+								
+								#block-boxes-contact-bob 	{	/*
+position: absolute;
+																right: 0;
+*/
+																
+																a.contact-button	{	/* @include sassy-button('shiny', 10px , 14px, $bright); */
+																						text-decoration: none;
+																					}	
+															}																	
+							}
+															
 #block-boxes-subtitle		{	max-height: 2em;
+								/* margin: -20px 0 0 0; */
 							}
 
 
-#block-views-pages-awards	{	background: transparent;
+#block-views-pages-awards	{	background: transparent url('/sites/default/files/images/awards_grey.png');
+								background-repeat: no-repeat;
+								/* background-position-x: 10%; */
+								background-position-y: 60%;
 								color: #fff;
 								position: relative;
 								
@@ -275,7 +325,7 @@ body.page-gallery	{	background: $darkest;
 
 								p 	{	font-size: $lead * .9;
 										text-align: right;
-										border-top: 1px dotted $medium;
+										/* border-top: 1px dotted $medium; */
 										padding-top: 10px;
 										color: $medium;
 										line-height: 1.3;
@@ -312,14 +362,14 @@ body.page-gallery	{	background: $darkest;
 																}		
 }
 
-#block-views-gallery-front-videos	{		h4 {	margin: 0 0 2px 0;
-													color: $brighter;
-													border-top: 1px dotted $bright;
-													padding-top: 20px;
-													width: 92%;
-											}
+#block-views-gallery-front-videos	{	border-top: 1px dotted $bright;	
+										h4 {	margin: 0 0 2px 0;
+												color: $brighter;
+												padding-top: 20px;
+												width: 92%;
+										}
 									}
-									
+
 .italic	{	font-style: italic;
 		}
 		

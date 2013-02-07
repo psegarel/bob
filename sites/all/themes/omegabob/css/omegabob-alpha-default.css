@@ -79,24 +79,13 @@ h6.site-slogan {
   background: none;
 }
 
-/*
-#block-views-gallery-masonry-gallery .view-content {	margin: 0;
-
-														.item	{	float: left;
-																	width: 350px;
-																	padding: 10px;
-																	background: #fff;
-																	border: 1px solid #ddd;
-																}		
-}
-*/
 /*--------------------------------------------- MAIN MENU ------------------------------------------------------------*/
-/* line 79, ../sass/omegabob-alpha-default.scss */
+/* line 66, ../sass/omegabob-alpha-default.scss */
 ul.nav li {
   list-style: none;
   display: inline;
 }
-/* line 81, ../sass/omegabob-alpha-default.scss */
+/* line 68, ../sass/omegabob-alpha-default.scss */
 ul.nav li a {
   text-decoration: none;
   font-size: 18px;
