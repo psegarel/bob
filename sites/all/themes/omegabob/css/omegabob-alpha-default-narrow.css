@@ -34,3 +34,8 @@ h6.site-slogan {
 #region-postscript-second {
   display: block;
 }
+
+/* line 28, ../sass/omegabob-alpha-default-narrow.scss */
+#block-views-news-front-news h2.block-title {
+  display: none;
+}

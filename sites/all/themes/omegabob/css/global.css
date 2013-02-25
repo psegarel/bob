@@ -174,6 +174,11 @@ h6.site-slogan {
 }
 
 /* line 92, ../sass/global.scss */
+#block-views-gallery-block-1 h4 {
+  color: white;
+}
+
+/* line 96, ../sass/global.scss */
 #block-views-footer-get-in-touch h4 {
   padding-top: 4px;
   margin: 0;
@@ -181,24 +186,24 @@ h6.site-slogan {
   color: #d5ced6;
   padding-bottom: 10px;
 }
-/* line 99, ../sass/global.scss */
+/* line 103, ../sass/global.scss */
 #block-views-footer-get-in-touch .dotted-top {
   border-bottom: 1px dotted #d5ced6;
   padding-top: 8px;
   margin-bottom: 10px;
 }
-/* line 104, ../sass/global.scss */
+/* line 108, ../sass/global.scss */
 #block-views-footer-get-in-touch img {
   margin-bottom: 40px;
 }
 
-/* line 109, ../sass/global.scss */
+/* line 113, ../sass/global.scss */
 #block-views-front-page-items-all-of-me,
 #block-views-references-front-reference {
   font-size: 18px;
   line-height: 120%;
 }
-/* line 112, ../sass/global.scss */
+/* line 116, ../sass/global.scss */
 #block-views-front-page-items-all-of-me h3,
 #block-views-references-front-reference h3 {
   font-weight: bold;
@@ -206,52 +211,52 @@ h6.site-slogan {
   color: #363636;
   margin-top: 20px;
 }
-/* line 118, ../sass/global.scss */
+/* line 122, ../sass/global.scss */
 #block-views-front-page-items-all-of-me img,
 #block-views-references-front-reference img {
   display: none;
 }
 
-/* line 122, ../sass/global.scss */
+/* line 126, ../sass/global.scss */
 #block-views-footer-social-networks {
   margin-bottom: 2em;
 }
 
-/* line 125, ../sass/global.scss */
+/* line 129, ../sass/global.scss */
 #block-views-pages-about-block .adaptive-image {
   margin-bottom: 20px;
 }
 
-/* line 129, ../sass/global.scss */
+/* line 133, ../sass/global.scss */
 #block-views-quote-frontpage-quote {
   padding: 0 0 20px 0;
   margin-bottom: 80px;
 }
-/* line 133, ../sass/global.scss */
+/* line 137, ../sass/global.scss */
 #block-views-quote-frontpage-quote .quote-body p,
 #block-views-quote-frontpage-quote .quote-author {
   font-family: Lobster, Georgia, serif;
   font-size: 43.2px;
   line-height: 120%;
 }
-/* line 138, ../sass/global.scss */
+/* line 142, ../sass/global.scss */
 #block-views-quote-frontpage-quote .quote-body p {
   margin: 2em 0 0 2em;
   color: #3b2f3d;
 }
-/* line 142, ../sass/global.scss */
+/* line 146, ../sass/global.scss */
 #block-views-quote-frontpage-quote .quote-author {
   padding: 0;
   margin: 0;
   color: #3b2f3d;
   margin: 1em 0 0 2em;
 }
-/* line 147, ../sass/global.scss */
+/* line 151, ../sass/global.scss */
 #block-views-quote-frontpage-quote .icon-quote-left {
   color: #3b2f3d;
 }
 
-/* line 151, ../sass/global.scss */
+/* line 155, ../sass/global.scss */
 #block-views-news-front-news h2.block-title {
   color: #3b2f3d;
   position: absolute;
@@ -261,34 +266,35 @@ h6.site-slogan {
   font-size: 70px;
   font-family: "Lobster", sans-serif;
   font-weight: bold;
+  display: none;
 }
-/* line 161, ../sass/global.scss */
+/* line 166, ../sass/global.scss */
 #block-views-news-front-news h3 {
   border-bottom: 1px dotted #87778a;
   padding: 16px 0 6px 0;
   color: #d5ced6;
 }
 
-/* line 167, ../sass/global.scss */
+/* line 172, ../sass/global.scss */
 #block-views-front-page-items-all-of-me {
   margin: 4em 0 0 0;
   border-top: 1px dotted #87778a;
   /* border-bottom: 1px dotted $bright; */
   padding: 1em 0;
 }
-/* line 171, ../sass/global.scss */
+/* line 176, ../sass/global.scss */
 #block-views-front-page-items-all-of-me .view-front-page-items h3 {
   color: #fff;
   font-weight: normal;
   font-size: 1.2em;
 }
-/* line 176, ../sass/global.scss */
+/* line 181, ../sass/global.scss */
 #block-views-front-page-items-all-of-me .view-front-page-items p {
   color: #fff;
   line-height: 1.3;
 }
 
-/* line 185, ../sass/global.scss */
+/* line 190, ../sass/global.scss */
 .icon-facebook-sign,
 .icon-twitter,
 .icon-envelope,
@@ -296,13 +302,13 @@ h6.site-slogan {
   margin-right: 10px;
 }
 
-/* line 190, ../sass/global.scss */
+/* line 195, ../sass/global.scss */
 ul.subtitle {
   list-style: none;
   padding: 0 0 10px 0;
   margin: 0;
 }
-/* line 194, ../sass/global.scss */
+/* line 199, ../sass/global.scss */
 ul.subtitle li {
   display: inline;
   float: left;
@@ -311,96 +317,96 @@ ul.subtitle li {
 }
 
 /*------------------------------ END TYPOGRAPHY ------------------------------------------------------------*/
-/* line 204, ../sass/global.scss */
+/* line 209, ../sass/global.scss */
 body {
   background-image: url("/sites/default/files/images/background/subtle_grunge.png");
   background-repeat: repeat repeat;
 }
 
-/* line 209, ../sass/global.scss */
+/* line 214, ../sass/global.scss */
 body.page-gallery {
   background: #363636;
 }
-/* line 210, ../sass/global.scss */
+/* line 215, ../sass/global.scss */
 body.page-gallery #zone-user-wrapper {
   background: #363636;
   border-bottom: 1px solid #777777;
 }
-/* line 214, ../sass/global.scss */
+/* line 219, ../sass/global.scss */
 body.page-gallery h2.site-name a {
   color: #fff;
 }
-/* line 217, ../sass/global.scss */
+/* line 222, ../sass/global.scss */
 body.page-gallery #block-boxes-robert-brusen {
   color: #fff;
 }
-/* line 220, ../sass/global.scss */
+/* line 225, ../sass/global.scss */
 body.page-gallery #zone-header,
 body.page-gallery #zone-footer-wrapper {
   border: none;
 }
-/* line 223, ../sass/global.scss */
+/* line 228, ../sass/global.scss */
 body.page-gallery #block-views-gallery-masonry-gallery h4 {
   background: #555555;
   padding: 10px 0 0 10px;
   margin-bottom: -3px;
 }
 
-/* line 230, ../sass/global.scss */
+/* line 235, ../sass/global.scss */
 #zone-branding-wrapper {
   margin: 6em 0 0 0;
   padding: 0;
 }
 
-/* line 235, ../sass/global.scss */
+/* line 240, ../sass/global.scss */
 #zone-header-wrapper {
   margin: 0 0 2em 0;
 }
 
-/* line 238, ../sass/global.scss */
+/* line 243, ../sass/global.scss */
 #zone-header {
   border-top: 1px dotted #87778a;
   border-bottom: 1px dotted #87778a;
   padding: 20px 0;
 }
 
-/* line 243, ../sass/global.scss */
+/* line 248, ../sass/global.scss */
 #zone-menu-wrapper {
   margin: 2em 0 0 0;
 }
 
-/* line 247, ../sass/global.scss */
+/* line 252, ../sass/global.scss */
 #zone-user-wrapper {
   margin-bottom: 1em;
   background: #3b2f3d;
 }
 
-/* line 252, ../sass/global.scss */
+/* line 257, ../sass/global.scss */
 #zone-preface-wrapper {
   margin-top: 0;
   margin-bottom: 4em;
 }
 
-/* line 257, ../sass/global.scss */
+/* line 262, ../sass/global.scss */
 #zone-postscript-wrapper {
   padding: 4em 0;
   background-color: #3b2f3d;
 }
 
-/* line 261, ../sass/global.scss */
+/* line 266, ../sass/global.scss */
 #zone-content-wrapper {
   /* @include background_dark_pattern;  */
   background-color: #3b2f3d;
   padding: 2em 0;
 }
 
-/* line 267, ../sass/global.scss */
+/* line 272, ../sass/global.scss */
 .context-news #zone-content-wrapper {
   background: transparent;
   color: #363636;
 }
 
-/* line 271, ../sass/global.scss */
+/* line 276, ../sass/global.scss */
 #zone-footer-wrapper {
   background: url("/sites/default/files/images/background/pw_maze_black.png");
   background-repeat: repeat;
@@ -408,58 +414,58 @@ body.page-gallery #block-views-gallery-masonry-gallery h4 {
   border-top: 10px solid #3b2f3d;
   padding: 4em 0 8em 0;
 }
-/* line 276, ../sass/global.scss */
+/* line 281, ../sass/global.scss */
 #zone-footer-wrapper h2, #zone-footer-wrapper h3 {
   margin-bottom: 10px;
 }
-/* line 279, ../sass/global.scss */
+/* line 284, ../sass/global.scss */
 #zone-footer-wrapper a {
   text-decoration: none;
   margin-left: 10px;
 }
-/* line 281, ../sass/global.scss */
+/* line 286, ../sass/global.scss */
 #zone-footer-wrapper a:hover {
   text-decoration: underline;
 }
 
-/* line 286, ../sass/global.scss */
+/* line 291, ../sass/global.scss */
 #region-postscript-first {
   display: block;
 }
 
-/* line 289, ../sass/global.scss */
+/* line 294, ../sass/global.scss */
 #region-postscript-second {
   display: none;
 }
 
-/* line 292, ../sass/global.scss */
+/* line 297, ../sass/global.scss */
 #region-user-second {
   position: relative;
 }
-/* line 293, ../sass/global.scss */
+/* line 298, ../sass/global.scss */
 #region-user-second .region-user-second-inner {
   position: relative;
 }
-/* line 296, ../sass/global.scss */
+/* line 301, ../sass/global.scss */
 #region-user-second #block-boxes-contact-bob {
   								                         	 	/*
   position: absolute;
   																right: 0;
   */
 }
-/* line 301, ../sass/global.scss */
+/* line 306, ../sass/global.scss */
 #region-user-second #block-boxes-contact-bob a.contact-button {
   /* @include sassy-button('shiny', 10px , 14px, $bright); */
   text-decoration: none;
 }
 
-/* line 307, ../sass/global.scss */
+/* line 312, ../sass/global.scss */
 #block-boxes-subtitle {
   max-height: 2em;
   /* margin: -20px 0 0 0; */
 }
 
-/* line 312, ../sass/global.scss */
+/* line 317, ../sass/global.scss */
 #block-views-pages-awards {
   background: transparent url("/sites/default/files/images/awards_grey.png");
   background-repeat: no-repeat;
@@ -468,14 +474,14 @@ body.page-gallery #block-views-gallery-masonry-gallery h4 {
   color: #fff;
   position: relative;
 }
-/* line 319, ../sass/global.scss */
+/* line 324, ../sass/global.scss */
 #block-views-pages-awards h2.block-title {
   font-family: "Lobster", serif;
   font-size: 40px;
   color: #3b2f3d;
   float: right;
 }
-/* line 326, ../sass/global.scss */
+/* line 331, ../sass/global.scss */
 #block-views-pages-awards p {
   font-size: 16.2px;
   text-align: right;
@@ -485,35 +491,35 @@ body.page-gallery #block-views-gallery-masonry-gallery h4 {
   line-height: 1.3;
 }
 
-/* line 335, ../sass/global.scss */
+/* line 340, ../sass/global.scss */
 #block-views-links-badge .badge {
   text-align: center;
   width: 90%;
   padding: 1em;
-  background: #363636;
+  /* background: $darkest; */
 }
 
-/* line 343, ../sass/global.scss */
+/* line 348, ../sass/global.scss */
 #block-views-pages-block-2 {
   background: #fafafa;
   border: 1px solid #cccccc;
   padding-left: 20px;
 }
-/* line 347, ../sass/global.scss */
+/* line 352, ../sass/global.scss */
 #block-views-pages-block-2 h2 {
   padding: 2em 0 0 10px;
 }
 
-/* line 351, ../sass/global.scss */
+/* line 356, ../sass/global.scss */
 #block-views-gallery-masonry-gallery .view-content {
   margin: 10px;
   color: #fff;
 }
-/* line 354, ../sass/global.scss */
+/* line 359, ../sass/global.scss */
 #block-views-gallery-masonry-gallery .view-content h4 {
   margin: 10px 0 2px 0;
 }
-/* line 357, ../sass/global.scss */
+/* line 362, ../sass/global.scss */
 #block-views-gallery-masonry-gallery .view-content .item {
   float: left;
   width: 350px;
@@ -522,11 +528,11 @@ body.page-gallery #block-views-gallery-masonry-gallery h4 {
   margin: 0;
 }
 
-/* line 365, ../sass/global.scss */
+/* line 370, ../sass/global.scss */
 #block-views-gallery-front-videos {
   border-top: 1px dotted #87778a;
 }
-/* line 366, ../sass/global.scss */
+/* line 371, ../sass/global.scss */
 #block-views-gallery-front-videos h4 {
   margin: 0 0 2px 0;
   color: #d5ced6;
@@ -534,22 +540,22 @@ body.page-gallery #block-views-gallery-masonry-gallery h4 {
   width: 92%;
 }
 
-/* line 373, ../sass/global.scss */
+/* line 378, ../sass/global.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 376, ../sass/global.scss */
+/* line 381, ../sass/global.scss */
 .selected {
   border-bottom: 3px solid #363636;
 }
 
-/* line 379, ../sass/global.scss */
+/* line 384, ../sass/global.scss */
 ul.menu li {
   list-style: none;
   display: inline;
 }
-/* line 382, ../sass/global.scss */
+/* line 387, ../sass/global.scss */
 ul.menu li a {
   text-decoration: none;
   font-size: 18px;
@@ -562,7 +568,7 @@ ul.menu li a {
   border-right: 1px solid #3b2f3d;
   border-left: 1px solid #3b2f3d;
 }
-/* line 394, ../sass/global.scss */
+/* line 399, ../sass/global.scss */
 ul.menu li a:hover,
 ul.menu li a.active {
   border-right: 1px solid #d5ced6;
@@ -575,7 +581,7 @@ ul.menu li a.active {
 root element for the scrollable.  when scrolling occurs this
 element stays still.
 */
-/* line 408, ../sass/global.scss */
+/* line 413, ../sass/global.scss */
 .scrollable {
   /* required settings */
   position: relative;
@@ -590,7 +596,7 @@ and it should have a extremely large width to accommodate scrollable
 items.  it's enough that you set width and height for the root element
 and not for this element.
 */
-/* line 422, ../sass/global.scss */
+/* line 427, ../sass/global.scss */
 .scrollable .items {
   /* this cannot be too large */
   width: 20000em;
@@ -601,14 +607,14 @@ and not for this element.
 a single item. must be floated in horizontal scrolling.  typically,
 this element is the one that *you* will style the most.
 */
-/* line 432, ../sass/global.scss */
+/* line 437, ../sass/global.scss */
 .items div {
   float: left;
 }
 
 /* JQUERY TOOLS _ OVERLAY */
 /* the overlayed element */
-/* line 439, ../sass/global.scss */
+/* line 444, ../sass/global.scss */
 .simple_overlay {
   background-image: url("/sites/default/files/images/background/subtle_grunge.png");
   background-repeat: repeat repeat;
@@ -630,7 +636,7 @@ this element is the one that *you* will style the most.
 }
 
 /* close button positioned on upper right corner */
-/* line 466, ../sass/global.scss */
+/* line 471, ../sass/global.scss */
 .simple_overlay .close {
   background-image: url(/sites/all/themes/omegabob/images/close.png);
   position: absolute;

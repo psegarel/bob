@@ -38,3 +38,9 @@ h6.site-slogan {
   background: none;
   border: none;
 }
+
+/* line 30, ../sass/omegabob-alpha-default-normal.scss */
+#block-views-news-front-news h2.block-title {
+  display: block;
+  top: -36%;
+}

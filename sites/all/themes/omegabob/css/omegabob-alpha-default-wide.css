@@ -10,3 +10,9 @@
 #region-postscript-second {
   display: none;
 }
+
+/* line 11, ../sass/omegabob-alpha-default-wide.scss */
+#block-views-news-front-news h2.block-title {
+  display: block;
+  top: -40%;
+}

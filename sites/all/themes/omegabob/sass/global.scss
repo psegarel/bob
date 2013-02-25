@@ -89,6 +89,10 @@ h6.site-slogan										{	color: $light;
 															}
 													}
 
+#block-views-gallery-block-1							{	h4	{	color: white;
+															}
+													}
+													
 #block-views-footer-get-in-touch					{	h4	{	padding-top: 4px;
 																margin: 0;
 																line-height: 1;
@@ -156,6 +160,7 @@ h6.site-slogan										{	color: $light;
 																			font-size: 70px;
 																			font-family: 'Lobster' , sans-serif;
 																			font-weight: bold;
+																			display: none;
 																		}
 																		
 														h3				{	border-bottom: 1px dotted $bright;
@@ -335,7 +340,7 @@ position: absolute;
 #block-views-links-badge .badge	{	text-align: center;
 									width: 90%;
 									padding: 1em;
-									background: $darkest;
+									/* background: $darkest; */
 								}
 
 
