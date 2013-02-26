@@ -56,7 +56,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'grid-3 alpha';
+  $handler->display->display_options['style_options']['row_class'] = 'grid-2 alpha';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -118,7 +118,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'grid-4 alpha dotted-top';
+  $handler->display->display_options['style_options']['row_class'] = 'grid-5 alpha dotted-top';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -148,7 +148,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h4';
-  $handler->display->display_options['fields']['title']['element_class'] = 'grid-2 alpha';
+  $handler->display->display_options['fields']['title']['element_class'] = 'grid-3 alpha';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
@@ -158,7 +158,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['field_job_description']['field'] = 'field_job_description';
   $handler->display->display_options['fields']['field_job_description']['label'] = '';
   $handler->display->display_options['fields']['field_job_description']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_job_description']['element_class'] = 'grid-2 alpha';
+  $handler->display->display_options['fields']['field_job_description']['element_class'] = 'grid-3 alpha';
   $handler->display->display_options['fields']['field_job_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_job_description']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_job_description']['hide_empty'] = TRUE;
@@ -170,7 +170,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_phone']['alter']['text'] = '<i class="icon-phone"></i>[field_phone]';
   $handler->display->display_options['fields']['field_phone']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_phone']['element_class'] = 'grid-2 alpha';
+  $handler->display->display_options['fields']['field_phone']['element_class'] = 'grid-3 alpha';
   $handler->display->display_options['fields']['field_phone']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_phone']['element_default_classes'] = FALSE;
   /* Field: Content: Email */
@@ -181,7 +181,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['field_email']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_email']['alter']['text'] = '<a href="mailto:[field_email]"><i class="icon-envelope"></i>[field_email]</a>';
   $handler->display->display_options['fields']['field_email']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_email']['element_class'] = 'grid-2 alpha';
+  $handler->display->display_options['fields']['field_email']['element_class'] = 'grid-3 alpha';
   $handler->display->display_options['fields']['field_email']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_email']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_email']['hide_empty'] = TRUE;
@@ -285,7 +285,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'grid-3 alpha';
+  $handler->display->display_options['style_options']['row_class'] = 'grid-5 alpha';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -1338,17 +1338,16 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['label'] = '';
-  $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_1']['alter']['text'] = 'Read More';
-  $handler->display->display_options['fields']['title_1']['element_type'] = 'div';
-  $handler->display->display_options['fields']['title_1']['element_class'] = 'more grid-4';
-  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'sassy';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -1820,7 +1819,7 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_type'] = 'div';
-  $handler->display->display_options['fields']['body']['element_class'] = 'smalltext faded century';
+  $handler->display->display_options['fields']['body']['element_class'] = 'smalltext faded century awards';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -1845,6 +1844,96 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['filters']['nid']['field'] = 'nid';
   $handler->display->display_options['filters']['nid']['value']['value'] = '45';
   $export['pages'] = $view;
+
+  $view = new view();
+  $view->name = 'quote';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Quote';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['text'] = '<i class="icon-quote-left icon-4x pull-left"></i> [body] <i class="icon-quote-right icon-4x pull-left"></i> ';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_quote_author']['id'] = 'field_quote_author';
+  $handler->display->display_options['fields']['field_quote_author']['table'] = 'field_data_field_quote_author';
+  $handler->display->display_options['fields']['field_quote_author']['field'] = 'field_quote_author';
+  $handler->display->display_options['fields']['field_quote_author']['label'] = '';
+  $handler->display->display_options['fields']['field_quote_author']['element_label_colon'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'quote' => 'quote',
+  );
+
+  /* Display: Frontpage Quote */
+  $handler = $view->new_display('block', 'Frontpage Quote', 'frontpage_quote');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'fronpage-quote';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['text'] = '<i class="icon-quote-left icon-4x pull-left"></i> [body]';
+  $handler->display->display_options['fields']['body']['alter']['preserve_tags'] = 'h3 i';
+  $handler->display->display_options['fields']['body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_class'] = 'quote-body';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_quote_author']['id'] = 'field_quote_author';
+  $handler->display->display_options['fields']['field_quote_author']['table'] = 'field_data_field_quote_author';
+  $handler->display->display_options['fields']['field_quote_author']['field'] = 'field_quote_author';
+  $handler->display->display_options['fields']['field_quote_author']['label'] = '';
+  $handler->display->display_options['fields']['field_quote_author']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_quote_author']['element_class'] = 'quote-author';
+  $handler->display->display_options['fields']['field_quote_author']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_quote_author']['element_default_classes'] = FALSE;
+  $export['quote'] = $view;
 
   $view = new view();
   $view->name = 'references';
@@ -2000,10 +2089,6 @@ function bob_bellows_views_views_default_views() {
     'image_style' => '570x385',
     'image_link' => '',
   );
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -2050,12 +2135,25 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '60';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_type'] = 'div';
   $handler->display->display_options['fields']['body']['element_class'] = 'carousel-caption';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Global: Random */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
 
   /* Display: JQTools Slideshow */
   $handler = $view->new_display('block', 'JQTools Slideshow', 'jqtools_slideshow');
@@ -2095,6 +2193,20 @@ function bob_bellows_views_views_default_views() {
   $handler->display->display_options['fields']['body']['element_class'] = 'carousel-caption';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_type'] = 'p';
+  $handler->display->display_options['fields']['title']['element_class'] = 'caption';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Global: Random */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
   $export['slideshow'] = $view;
 
   return $export;
