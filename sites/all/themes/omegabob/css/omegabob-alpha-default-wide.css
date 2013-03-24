@@ -1,17 +1,17 @@
 /* This file will hold styles that are loaded using the same media query as the wide grid. */
 /* $darkest: #373534; */
 /* Show the three videos row */
-/* line 5, ../sass/omegabob-alpha-default-wide.scss */
+/* line 6, ../sass/omegabob-alpha-default-wide.scss */
 #region-postscript-first {
   display: block;
 }
 
-/* line 8, ../sass/omegabob-alpha-default-wide.scss */
+/* line 9, ../sass/omegabob-alpha-default-wide.scss */
 #region-postscript-second {
   display: none;
 }
 
-/* line 11, ../sass/omegabob-alpha-default-wide.scss */
+/* line 12, ../sass/omegabob-alpha-default-wide.scss */
 #block-views-news-front-news h2.block-title {
   display: block;
   top: -40%;

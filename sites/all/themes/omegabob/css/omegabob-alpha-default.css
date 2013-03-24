@@ -27,23 +27,98 @@ h6.site-slogan {
   font-size: 30px;
 }
 
-/* line 23, ../sass/omegabob-alpha-default.scss */
+/* line 24, ../sass/omegabob-alpha-default.scss */
+#region-user-first {
+  display: block;
+}
+/* line 26, ../sass/omegabob-alpha-default.scss */
+#region-user-first ul.subtitle {
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+/* line 30, ../sass/omegabob-alpha-default.scss */
+#region-user-first ul.subtitle li {
+  display: inline;
+  float: left;
+  padding: 0 28px 0 0;
+  font-size: 1.2em;
+}
+
+/* line 38, ../sass/omegabob-alpha-default.scss */
+#region-user-second ul.menu li {
+  list-style: none;
+  display: inline;
+}
+/* line 41, ../sass/omegabob-alpha-default.scss */
+#region-user-second ul.menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 7px 18px;
+  color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-bottom-style: none;
+  border-right: 1px solid #3b2f3d;
+  border-left: 1px solid #3b2f3d;
+}
+/* line 53, ../sass/omegabob-alpha-default.scss */
+#region-user-second ul.menu li a:hover,
+#region-user-second ul.menu li a.active {
+  border-right: 1px solid #d5ced6;
+  border-left: 1px solid #d5ced6;
+  color: #d5ced6;
+}
+
+/* line 62, ../sass/omegabob-alpha-default.scss */
+#region-branding-first,
+#region-branding-second {
+  display: block;
+}
+
+/* line 65, ../sass/omegabob-alpha-default.scss */
 #block-boxes-subtitle p {
   font-size: 18px;
 }
 
-/* line 26, ../sass/omegabob-alpha-default.scss */
+/* line 68, ../sass/omegabob-alpha-default.scss */
 #boxes-box-robert_brusen {
   font-size: 18px;
 }
 
-/* line 33, ../sass/omegabob-alpha-default.scss */
+/* line 73, ../sass/omegabob-alpha-default.scss */
+#block-views-pages-awards {
+  background: transparent url("/sites/default/files/images/awards_grey.png");
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+  color: #fff;
+  position: relative;
+}
+/* line 79, ../sass/omegabob-alpha-default.scss */
+#block-views-pages-awards h2.block-title {
+  font-family: "Lobster", serif;
+  font-size: 40px;
+  color: #3b2f3d;
+  float: right;
+}
+/* line 86, ../sass/omegabob-alpha-default.scss */
+#block-views-pages-awards p {
+  font-size: 16.2px;
+  text-align: right;
+  /* border-top: 1px dotted $medium; */
+  padding-top: 10px;
+  color: #3b2f3d;
+  line-height: 1.3;
+}
+
+/* line 96, ../sass/omegabob-alpha-default.scss */
 #block-views-front-page-items-all-of-me,
 #block-views-references-front-reference {
   font-size: 1.4em;
   line-height: 120%;
 }
-/* line 36, ../sass/omegabob-alpha-default.scss */
+/* line 99, ../sass/omegabob-alpha-default.scss */
 #block-views-front-page-items-all-of-me h3,
 #block-views-references-front-reference h3 {
   font-weight: bold;
@@ -51,17 +126,17 @@ h6.site-slogan {
   color: #363636;
   margin-top: 0;
 }
-/* line 42, ../sass/omegabob-alpha-default.scss */
+/* line 105, ../sass/omegabob-alpha-default.scss */
 #block-views-front-page-items-all-of-me img,
 #block-views-references-front-reference img {
   display: block;
 }
 
-/* line 46, ../sass/omegabob-alpha-default.scss */
+/* line 109, ../sass/omegabob-alpha-default.scss */
 #boxes-box-plato {
   padding: 0 0 0 10%;
 }
-/* line 48, ../sass/omegabob-alpha-default.scss */
+/* line 111, ../sass/omegabob-alpha-default.scss */
 #boxes-box-plato p {
   font-family: Lobster, Georgia, serif;
   font-size: 36px;
@@ -71,7 +146,7 @@ h6.site-slogan {
   padding: 0 0 0 2em;
 }
 
-/* line 57, ../sass/omegabob-alpha-default.scss */
+/* line 120, ../sass/omegabob-alpha-default.scss */
 #block-views-links-badge .badge {
   text-align: left;
   width: 100%;
@@ -80,12 +155,12 @@ h6.site-slogan {
 }
 
 /*--------------------------------------------- MAIN MENU ------------------------------------------------------------*/
-/* line 66, ../sass/omegabob-alpha-default.scss */
+/* line 129, ../sass/omegabob-alpha-default.scss */
 ul.nav li {
   list-style: none;
   display: inline;
 }
-/* line 68, ../sass/omegabob-alpha-default.scss */
+/* line 131, ../sass/omegabob-alpha-default.scss */
 ul.nav li a {
   text-decoration: none;
   font-size: 18px;

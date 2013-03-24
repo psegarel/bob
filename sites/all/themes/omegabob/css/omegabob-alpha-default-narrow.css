@@ -13,29 +13,29 @@ h6.site-slogan {
   font-size: 17.96407px;
 }
 
-/* line 14, ../sass/omegabob-alpha-default-narrow.scss */
+/* line 15, ../sass/omegabob-alpha-default-narrow.scss */
 #block-boxes-subtitle p {
   font-size: 10.77844px;
 }
 
-/* line 17, ../sass/omegabob-alpha-default-narrow.scss */
+/* line 18, ../sass/omegabob-alpha-default-narrow.scss */
 #boxes-box-robert_brusen {
   font-size: 12.93413px;
   text-transform: uppercase;
 }
 
 /* Videos don't scale so hide the three videos row */
-/* line 22, ../sass/omegabob-alpha-default-narrow.scss */
+/* line 23, ../sass/omegabob-alpha-default-narrow.scss */
 #region-postscript-first {
   display: none;
 }
 
-/* line 25, ../sass/omegabob-alpha-default-narrow.scss */
+/* line 26, ../sass/omegabob-alpha-default-narrow.scss */
 #region-postscript-second {
   display: block;
 }
 
-/* line 28, ../sass/omegabob-alpha-default-narrow.scss */
+/* line 29, ../sass/omegabob-alpha-default-narrow.scss */
 #block-views-news-front-news h2.block-title {
   display: none;
 }
