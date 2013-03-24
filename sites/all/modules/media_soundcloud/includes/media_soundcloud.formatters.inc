@@ -66,7 +66,7 @@ function media_soundcloud_file_formatter_audio_settings($form, &$form_state, $se
   );
   $element['extra_params'] = array(
     '#title' => t('Extra parameters'),
-    '#description' => t('Add multiple parameters as comma separated colon separated pairs. Eg. color: 2582fa, show_artwork: false, iframe: true. See http://developers.soundcloud.com/docs/oembed for more parameters.'),
+    '#description' => t('Add multiple parameters as comma separated colon separated pairs. Eg. color: 2582fa, iframe: true. See http://developers.soundcloud.com/docs/oembed for more parameters.'),
     '#type' => 'textfield',
     '#default_value' => $settings['extra_params'],
   );
@@ -122,6 +122,20 @@ function media_soundcloud_file_default_displays() {
 
   // Default settings for displaying as a audio.
   $default_audio_settings = array(
+    'default' => array(
+      'width' => 640,
+      'autoplay' => FALSE,
+      'extra_params' => media_soundcloud_variable_get('extra_params'),
+    ),
+    'teaser' => array(
+      'width' => "100%",
+      'autoplay' => FALSE,
+      'extra_params' => media_soundcloud_variable_get('extra_params'),
+    ),
+    // Legacy view modes included to support older versions of Media,
+    // before #1051090 went through. They do no harm and can sit here
+    // until there is a Media 2.x stable.
+    // @TODO: Remove when Media 2.0 is released.
     'media_large' => array(
       'width' => 480,
       'autoplay' => FALSE,
@@ -149,9 +163,12 @@ function media_soundcloud_file_default_displays() {
   // WYSIWYG editor. The higher weight ensures that the audio display is used
   // where possible.
   $default_image_styles = array(
-    'media_preview' => 'square_thumbnail',
+    'default' => 'large',
+    'preview' => 'square_thumbnail',
+    'teaser' => 'large',
+    // Legacy view modes, see note above.
     'media_large' => 'large',
-    'media_original' => ''
+    'media_original' => '',
   );
   foreach ($default_image_styles as $view_mode => $image_style) {
     $display_name = 'audio__' . $view_mode . '__media_soundcloud_image';
