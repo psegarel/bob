@@ -110,6 +110,11 @@ h6.site-slogan										{	color: $light;
 																					}				
 													}
 													
+body.page-gallery	{	#region-branding-first	{	h2.site-name a	{	color: #fff; 
+																	}
+												}
+					}													
+													
 #region-branding-second								{	#block-views-pages-awards	{	/*
 background: transparent url('/sites/default/files/images/awards_grey.png');
 																						background-repeat: no-repeat;
@@ -297,8 +302,10 @@ body.page-gallery	{	background: $darkest;
 												border-bottom: 1px solid $medium_grey;
 											}
 											
+/*
 						h2.site-name a	{	color: #fff;
 										}
+*/
 										
 						#block-boxes-robert-brusen	{	color: #fff;
 													}
